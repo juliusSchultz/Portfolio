@@ -51,7 +51,7 @@ export default defineComponent({
 <style>
 nav,
 .nav-links {
-  display: flex;
+  @apply flex;
 }
 
 nav {
@@ -70,6 +70,7 @@ a {
   color: black;
   text-decoration: none;
   text-decoration-color: white;
+  @apply font-sans;
 }
 
 a:hover {

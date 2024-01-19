@@ -67,7 +67,6 @@ nav {
 }
 
 a {
-  color: black;
   text-decoration: none;
   text-decoration-color: white;
   @apply font-sans;

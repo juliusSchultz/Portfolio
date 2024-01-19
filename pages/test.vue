@@ -1,5 +1,4 @@
 <template>
-  <Header>
-    Hallo
-  </Header>
+  <Header />
+  <Footer />
 </template>

@@ -1,0 +1,34 @@
+# Ignored Files
+
+## General
+
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+.stylelintcache
+report
+
+## IDE related files
+
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+## Vitest
+
+coverage/
+
+## Histoire
+
+.histoire
+/localhost.pem
+/localhost-key.pem

@@ -3,9 +3,9 @@
     <div class="header__logo">Julius Schultz</div>
     <div>
       <ul class="header__links">
-        <li v-for="link in links">
+        <li v-for="(link, index) in links" :key="index">
           <NuxtLink class="header__link" :to="link.href">
-            {{link.label}}
+            {{ link.label }}
           </NuxtLink>
         </li>
       </ul>
@@ -30,29 +30,30 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'Header',
   setup() {
     const toggleMenu = () => {
-      const menu = document.querySelector(".menu-links");
-      const icon = document.querySelector(".hamburger-icon");
-      menu.classList.toggle("open");
-      icon.classList.toggle("open");
+      const menu = document.querySelector('.menu-links')
+      const icon = document.querySelector('.hamburger-icon')
+      menu.classList.toggle('open')
+      icon.classList.toggle('open')
     }
 
     const links = [
-        {href: '/about', label: 'About'},
-      {href: '/experience', label: 'Experience'},
-      {href: '/projects', label: 'Projects'},
-      {href: '/contact', label: 'Contact'} ]
+      { href: '/about', label: 'About' },
+      { href: '/experience', label: 'Experience' },
+      { href: '/projects', label: 'Projects' },
+      { href: '/contact', label: 'Contact' },
+    ]
 
     return {
       toggleMenu,
-      links
+      links,
     }
-  }
+  },
 })
 </script>
 
@@ -63,11 +64,11 @@ export default defineComponent({
   align-items: center;
   height: 17vh;
 
-  &__logo{
+  &__logo {
     font-size: 2rem;
   }
 
-  &__logo:hover{
+  &__logo:hover {
     cursor: default;
   }
 
@@ -79,16 +80,16 @@ export default defineComponent({
   }
 
   &__link {
-      text-decoration: none;
-      text-decoration-color: white;
-      @apply font-sans;
+    text-decoration: none;
+    text-decoration-color: white;
+    @apply font-sans;
   }
 
   &__link:hover {
-      color: grey;
-      text-decoration: underline;
-      text-underline-offset: 1rem;
-      text-decoration-color: rgb(181, 181, 181);
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
   }
 }
 

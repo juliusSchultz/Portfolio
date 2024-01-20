@@ -9,8 +9,8 @@
       <p class="section__text__p2">Frontend Developer</p>
       <div class="btn-container">
         <button
-            class="btn btn-diva-e"
-            onclick="window.open('https://www.diva-e.com/de/')"
+          class="btn btn-diva-e"
+          onclick="window.open('https://www.diva-e.com/de/')"
         >
           My Company
         </button>
@@ -20,16 +20,16 @@
       </div>
       <div id="socials-container">
         <NuxtImg
-            src="linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/julius-schultz-670b54173/')"
+          src="linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="window.open('https://www.linkedin.com/in/julius-schultz-670b54173/')"
         />
         <NuxtImg
-            src="github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/juliusSchultz')"
+          src="github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="window.open('https://github.com/juliusSchultz')"
         />
       </div>
     </div>
@@ -119,7 +119,7 @@
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
-  box-shadow:  0 0 10px 5px rgba(0,0,0,0.6);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
 }
 
 .btn-color-1:hover {
@@ -140,9 +140,9 @@
   color: white;
 }
 
-.btn-diva-e:hover{
+.btn-diva-e:hover {
   font-style: italic;
-  box-shadow:  0 0 10px 5px rgba(5,19,255,0.6);
+  box-shadow: 0 0 10px 5px rgba(5, 19, 255, 0.6);
 }
 
 .btn-container {

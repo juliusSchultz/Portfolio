@@ -1,32 +1,41 @@
 <template>
-  <nav id="desktop-nav" class="header">
-    <div class="header__logo">Julius Schultz</div>
-    <div>
-      <ul class="header__links">
+  <header>
+    <nav class="header" :class="'header--tablet'">
+      <div class="header__logo">Julius Schultz</div>
+      <div>
+        <ul class="header__links">
+          <li v-for="(link, index) in links" :key="index">
+            <NuxtLink class="header__link" :to="link.href">
+              {{ link.label }}
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="header" :class="'header--mobile'">
+      <div class="header__logo">Julius Schultz</div>
+      <div class="header__hamburger-menu">
+        <div class="header__hamburger-icon" @click="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <ul v-if="menuOpen" class="header__menu-links">
         <li v-for="(link, index) in links" :key="index">
-          <NuxtLink class="header__link" :to="link.href">
-            {{ link.label }}
+          <NuxtLink
+            class="header__link"
+            :class="'header__link--mobile'"
+            :to="link.href"
+            @click="toggleMenu"
+          >
+            <span :class="'header__link-label--mobile'">{{ link.label }}</span>
           </NuxtLink>
+          <div class="header__link-separator" />
         </li>
       </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Julius Schultz</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 </template>
 
 <script>
@@ -35,11 +44,9 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'Header',
   setup() {
+    const menuOpen = ref(false)
     const toggleMenu = () => {
-      const menu = document.querySelector('.menu-links')
-      const icon = document.querySelector('.hamburger-icon')
-      menu.classList.toggle('open')
-      icon.classList.toggle('open')
+      menuOpen.value = !menuOpen.value
     }
 
     const links = [
@@ -50,8 +57,12 @@ export default defineComponent({
     ]
 
     return {
-      toggleMenu,
+      //state
+      menuOpen,
       links,
+
+      //actions
+      toggleMenu,
     }
   },
 })
@@ -59,13 +70,37 @@ export default defineComponent({
 
 <style>
 .header {
-  @apply flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 17vh;
 
+  @screen md {
+    justify-content: space-around;
+  }
+
+  &--mobile {
+    @apply flex;
+
+    @screen md {
+      @apply hidden;
+    }
+  }
+
+  &--tablet {
+    @apply hidden;
+
+    @screen md {
+      @apply flex;
+    }
+  }
+
   &__logo {
+    padding-left: 20px;
     font-size: 2rem;
+
+    @screen md {
+      padding-left: 0;
+    }
   }
 
   &__logo:hover {
@@ -86,90 +121,57 @@ export default defineComponent({
   }
 
   &__link:hover {
-    color: grey;
-    text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
+
+    @screen md {
+      text-decoration: underline;
+    }
   }
-}
 
-/* HAMBURGER MENU */
+  &__hamburger-menu {
+    padding-right: 20px;
+  }
 
-#hamburger-nav {
-  display: none;
-}
+  &__hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
 
-.hamburger-menu {
-  position: relative;
-  display: inline-block;
-}
+    span {
+      width: 100%;
+      height: 2px;
+      background-color: black;
+      transition: all 0.3 ease-in-out;
+    }
+  }
 
-.hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
-}
+  &__menu-links {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    margin-top: 350px;
+  }
 
-.hamburger-icon span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
-}
+  &__link-separator {
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+  }
 
-.menu-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: white;
-  width: fit-content;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3 ease-in-out;
-}
+  &__link {
+    &--mobile {
+      @apply flex;
+    }
+  }
 
-.menu-links a {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-  transition: all 0.3 ease-in-out;
-}
-
-.menu-links li {
-  list-style: none;
-}
-
-.menu-links.open {
-  max-height: 300px;
-}
-
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
+  &__link-label {
+    &--mobile {
+      padding: 20px;
+      @apply px-5;
+    }
+  }
 }
 </style>

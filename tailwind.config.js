@@ -13,6 +13,32 @@ export default {
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
     },
+    colors: {
+      red: '#dd1541',
+      'red-darker': '#bd1237',
+      'red-lighter': '#ff184b',
+      'red-opacity': 'rgba(242, 23, 71, 0.1)',
+      'error-lighter': '#E24265',
+      yellow: '#f2e600',
+      'yellow-darker': '#dacf00',
+      'yellow-lighter': '#f9f380',
+      green: '#66cc77',
+      'green-lighter': '#83D490',
+      warning: '#ffa64d',
+      alert: '#dd1541',
+      'warning-lighter': '#FDB66F',
+      'grey-16': '#272727',
+      'grey-32': '#505050',
+      'grey-32-opacity': '#52525280',
+      'grey-48': '#7c7c7c',
+      'grey-64': '#a5a5a5',
+      'grey-80': '#dddddd',
+      'grey-88': '#e1e1e1',
+      'grey-96': '#f6f6f6',
+      black: '#000000',
+      white: '#ffffff',
+      transparent: 'transparent',
+    },
     fontSize: {
       xs: '.75rem', // 12px
       sm: '.875rem', // 14px

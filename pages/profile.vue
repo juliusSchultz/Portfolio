@@ -1,5 +1,5 @@
 <template>
-  <section id="profile">
+  <section class="profile">
     <div class="section__pic-container">
       <NuxtImg src="profile.png" alt="Julius Schultz profile picture" />
     </div>
@@ -18,26 +18,12 @@
           Contact Info
         </button>
       </div>
-      <div id="socials-container">
-        <NuxtImg
-          src="linkedin.png"
-          alt="My LinkedIn profile"
-          class="icon"
-          onclick="window.open('https://www.linkedin.com/in/julius-schultz-670b54173/')"
-        />
-        <NuxtImg
-          src="github.png"
-          alt="My Github profile"
-          class="icon"
-          onclick="window.open('https://github.com/juliusSchultz')"
-        />
-      </div>
     </div>
   </section>
 </template>
 
 <style>
-#profile {
+.profile {
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -72,20 +58,6 @@
 .title {
   font-size: 3rem;
   text-align: center;
-}
-
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}
-
-/* ICONS */
-
-.icon {
-  cursor: pointer;
-  height: 2rem;
 }
 
 /* BUTTONS */

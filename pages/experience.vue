@@ -8,66 +8,42 @@
           <h2 class="experience-sub-title">Frontend Development</h2>
           <div class="experience__article-container">
             <article>
-              <NuxtImg
-                src="checkmark.png"
-                alt="Experience icon"
-                class="experience__icon"
-              />
+              <Icon icon="verified" />
               <div>
                 <h3>Nuxt</h3>
                 <p>Experienced</p>
               </div>
             </article>
             <article>
-              <NuxtImg
-                src="checkmark.png"
-                alt="Experience icon"
-                class="experience__icon"
-              />
+              <Icon icon="verified" />
               <div>
                 <h3>React</h3>
                 <p>Intermediate</p>
               </div>
             </article>
             <article>
-              <NuxtImg
-                src="checkmark.png"
-                alt="Experience icon"
-                class="experience__icon"
-              />
+              <Icon icon="verified" />
               <div>
                 <h3>Python</h3>
                 <p>Intermediate</p>
               </div>
             </article>
             <article>
-              <NuxtImg
-                src="checkmark.png"
-                alt="Experience icon"
-                class="experience__icon"
-              />
+              <Icon icon="verified" />
               <div>
                 <h3>TransactSQL</h3>
                 <p>Intermediate</p>
               </div>
             </article>
             <article>
-              <NuxtImg
-                src="checkmark.png"
-                alt="Experience icon"
-                class="experience__icon"
-              />
+              <Icon icon="verified" />
               <div>
                 <h3>Java</h3>
                 <p>Intermediate</p>
               </div>
             </article>
             <article>
-              <NuxtImg
-                src="checkmark.png"
-                alt="Experience icon"
-                class="experience__icon"
-              />
+              <Icon icon="verified" />
               <div>
                 <h3>Swift</h3>
                 <p>Intermediate</p>
@@ -79,44 +55,28 @@
           <h2 class="experience-sub-title">Scrum Master</h2>
           <div class="experience__article-container">
             <article>
-              <NuxtImg
-                src="checkmark.png"
-                alt="Experience icon"
-                class="experience__icon"
-              />
+              <Icon icon="verified" />
               <div>
                 <h3>Events</h3>
                 <p>Experienced</p>
               </div>
             </article>
             <article>
-              <NuxtImg
-                src="checkmark.png"
-                alt="Experience icon"
-                class="experience__icon"
-              />
+              <Icon icon="verified" />
               <div>
                 <h3>Theory</h3>
                 <p>Experienced</p>
               </div>
             </article>
             <article>
-              <NuxtImg
-                src="checkmark.png"
-                alt="Experience icon"
-                class="experience__icon"
-              />
+              <Icon icon="verified" />
               <div>
                 <h3>Kanban</h3>
                 <p>Intermediate</p>
               </div>
             </article>
             <article>
-              <NuxtImg
-                src="checkmark.png"
-                alt="Experience icon"
-                class="experience__icon"
-              />
+              <Icon icon="verified" />
               <div>
                 <h3>Waterfall</h3>
                 <p>Intermediate</p>
@@ -128,7 +88,6 @@
     </div>
   </section>
 </template>
-<script setup lang="ts"></script>
 
 <style>
 .experience {

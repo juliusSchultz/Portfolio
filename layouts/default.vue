@@ -1,5 +1,14 @@
 <template>
   <Header />
-  <slot />
+  <div class="page-content">
+    <slot />
+  </div>
   <Footer />
 </template>
+
+<script setup lang="ts"></script>
+<style>
+.page-content {
+  min-height: 500px;
+}
+</style>

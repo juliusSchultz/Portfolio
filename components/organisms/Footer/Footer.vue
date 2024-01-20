@@ -3,9 +3,9 @@
     <nav>
       <div class="nav-links-container">
         <ul class="footer__links">
-          <li v-for="link in links">
+          <li v-for="(link, index) in links" :key="index">
             <NuxtLink class="footer__link" :to="link.href">
-              {{link.label}}
+              {{ link.label }}
             </NuxtLink>
           </li>
         </ul>
@@ -16,29 +16,29 @@
 </template>
 
 <script>
-import {defineComponent} from "vue";
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'Footer',
-  setup(){
+  setup() {
     const links = [
-      {href: '/about', label: 'About'},
-      {href: '/experience', label: 'Experience'},
-      {href: '/projects', label: 'Projects'},
-      {href: '/contact', label: 'Contact'} ]
+      { href: '/about', label: 'About' },
+      { href: '/experience', label: 'Experience' },
+      { href: '/projects', label: 'Projects' },
+      { href: '/contact', label: 'Contact' },
+    ]
 
     return {
-      links
+      links,
     }
-
-  }
+  },
 })
 </script>
 
+<script setup lang="ts"></script>
 <style>
 .footer {
   height: 26vh;
-  margin: 0 1rem;
   background-color: #525252;
   color: white;
 
@@ -69,5 +69,3 @@ footer p {
   text-align: center;
 }
 </style>
-<script setup lang="ts">
-</script>

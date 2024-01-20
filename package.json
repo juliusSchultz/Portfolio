@@ -21,24 +21,22 @@
     "lint:style:fix": "stylelint \"**/*.{vue,css,scss}\" --max-warnings 0 --fix"
   },
   "devDependencies": {
-    "nuxt": "^3.9.3",
-    "@nuxt/image": "^1.0.0-rc.1",
-    "@nuxtjs/tailwindcss": "^6.10.4",
-    "sass": "^1.70.0",
-    "vue": "^3.4.14",
-    "vue-router": "^4.2.5",
-    "eslint": "^8.22.0",
     "@babel/core": "^7.21.3",
     "@babel/eslint-parser": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-typescript": "^7.22.5",
+    "@nuxt/image": "^1.0.0-rc.1",
+    "@nuxtjs/tailwindcss": "^6.10.4",
+    "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "eslint-plugin-vue": "^9.3.0",
+    "nuxt": "^3.9.3",
     "prettier": "^2.8.5",
+    "sass": "^1.70.0",
     "stylelint": "^14.11.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^25.0.0",
@@ -46,6 +44,13 @@
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-junit-formatter": "^0.2.2",
     "stylelint-order": "^6.0.1",
-    "stylelint-processor-html": "^1.0.0"
+    "stylelint-processor-html": "^1.0.0",
+    "vue": "^3.4.14",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
+    "pinia": "^2.1.7",
+    "material-design-icons-iconfont": "^6.1.1"
   }
 }

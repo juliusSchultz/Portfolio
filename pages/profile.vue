@@ -2,7 +2,7 @@
   <Header />
   <section id="profile">
     <div class="section__pic-container">
-      <NuxtImg src="/assets/images/profile.png" alt="Julius Schultz profile picture" />
+      <NuxtImg src="profile.png" alt="Julius Schultz profile picture" />
     </div>
     <div class="section__text">
       <p class="section__text__p1">👋 Hello, I'm</p>
@@ -20,14 +20,14 @@
         </button>
       </div>
       <div id="socials-container">
-        <img
-            src="./assets/linkedin.png"
+        <NuxtImg
+            src="linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
             onclick="window.open('https://www.linkedin.com/in/julius-schultz-670b54173/')"
         />
-        <img
-            src="./assets/github.png"
+        <NuxtImg
+            src="github.png"
             alt="My Github profile"
             class="icon"
             onclick="window.open('https://github.com/juliusSchultz')"

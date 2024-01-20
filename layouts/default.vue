@@ -10,5 +10,6 @@
 <style>
 .page-content {
   min-height: 500px;
+  @apply px-10;
 }
 </style>

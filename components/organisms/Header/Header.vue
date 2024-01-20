@@ -95,11 +95,12 @@ export default defineComponent({
   }
 
   &__logo {
-    padding-left: 20px;
-    font-size: 2rem;
+    padding-left: 40px;
+    @apply text-xl;
 
     @screen md {
       padding-left: 0;
+      @apply text-3xl;
     }
   }
 
@@ -130,7 +131,7 @@ export default defineComponent({
   }
 
   &__hamburger-menu {
-    padding-right: 20px;
+    padding-right: 40px;
   }
 
   &__hamburger-icon {
@@ -169,8 +170,8 @@ export default defineComponent({
 
   &__link-label {
     &--mobile {
-      padding: 20px;
-      @apply px-5;
+      @apply py-5;
+      @apply pl-10;
     }
   }
 }

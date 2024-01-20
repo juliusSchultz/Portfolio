@@ -11,7 +11,9 @@
         </ul>
       </div>
     </nav>
-    <p>Copyright &#169; 2023 Julius Schultz. All Rights Reserved.</p>
+    <p class="footer__copyright">
+      Copyright &#169; 2024 Julius Schultz. All Rights Reserved.
+    </p>
   </footer>
 </template>
 
@@ -38,17 +40,24 @@ export default defineComponent({
 <script setup lang="ts"></script>
 <style>
 .footer {
-  height: 26vh;
   background-color: #525252;
   color: white;
 
   &__links {
-    @apply flex;
-    justify-content: center;
     @apply py-6;
-    gap: 2rem;
+    @apply flex;
+    @apply flex-col;
+    align-items: center;
+    justify-content: center;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    gap: 0.5rem;
+
+    @screen md {
+      gap: 2rem;
+      font-size: 1.5rem;
+      @apply flex-row;
+    }
   }
 
   &__link {
@@ -60,12 +69,18 @@ export default defineComponent({
   &__link:hover {
     color: grey;
     text-decoration: underline;
-    text-underline-offset: 1rem;
+    text-underline-offset: 0.5rem;
     text-decoration-color: rgb(181, 181, 181);
-  }
-}
 
-footer p {
-  text-align: center;
+    @screen md {
+      text-underline-offset: 1rem;
+    }
+  }
+
+  &__copyright {
+    @apply pb-4;
+    @apply text-sm;
+    text-align: center;
+  }
 }
 </style>

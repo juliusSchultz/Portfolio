@@ -2,7 +2,7 @@
   <Header />
   <section id="profile">
     <div class="section__pic-container">
-      <img src="./assets/profile.png" alt="Julius Schultz profile picture" />
+      <NuxtImg src="/assets/images/profile.png" alt="Julius Schultz profile picture" />
     </div>
     <div class="section__text">
       <p class="section__text__p1">👋 Hello, I'm</p>

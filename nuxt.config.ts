@@ -11,7 +11,5 @@ export default defineNuxtConfig({
     dirs: [{ path: '~/components', pathPrefix: false }],
   },
 
-  modules: [
-    '@nuxtjs/tailwindcss',
-  ]
+  modules: ['@nuxtjs/tailwindcss', "@nuxt/image"]
 })

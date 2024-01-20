@@ -42,6 +42,7 @@ export default defineComponent({
 .footer {
   background-color: #525252;
   color: white;
+  height: 26vh;
 
   &__links {
     @apply py-6;

@@ -1,5 +1,4 @@
 <template>
-  <Header />
   <section id="profile">
     <div class="section__pic-container">
       <NuxtImg src="profile.png" alt="Julius Schultz profile picture" />
@@ -35,7 +34,6 @@
       </div>
     </div>
   </section>
-  <Footer />
 </template>
 
 <style>

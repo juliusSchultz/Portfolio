@@ -1,12 +1,13 @@
 <template>
-  <nav id="desktop-nav">
-    <div class="logo">Julius Schultz</div>
+  <nav id="desktop-nav" class="header">
+    <div class="header__logo">Julius Schultz</div>
     <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="header__links">
+        <li v-for="link in links">
+          <NuxtLink class="header__link" :to="link.href">
+            {{link.label}}
+          </NuxtLink>
+        </li>
       </ul>
     </div>
   </nav>
@@ -41,50 +42,54 @@ export default defineComponent({
       icon.classList.toggle("open");
     }
 
+    const links = [
+        {href: '/about', label: 'About'},
+      {href: '/experience', label: 'Experience'},
+      {href: '/projects', label: 'Projects'},
+      {href: '/contact', label: 'Contact'} ]
+
     return {
-      toggleMenu
+      toggleMenu,
+      links
     }
   }
 })
 </script>
 
 <style>
-nav,
-.nav-links {
+.header {
   @apply flex;
-}
-
-nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-}
 
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-}
+  &__logo{
+    font-size: 2rem;
+  }
 
-a {
-  text-decoration: none;
-  text-decoration-color: white;
-  @apply font-sans;
-}
+  &__logo:hover{
+    cursor: default;
+  }
 
-a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
-}
+  &__links {
+    @apply flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+  }
 
-.logo {
-  font-size: 2rem;
-}
+  &__link {
+      text-decoration: none;
+      text-decoration-color: white;
+      @apply font-sans;
+  }
 
-.logo:hover {
-  cursor: default;
+  &__link:hover {
+      color: grey;
+      text-decoration: underline;
+      text-underline-offset: 1rem;
+      text-decoration-color: rgb(181, 181, 181);
+  }
 }
 
 /* HAMBURGER MENU */

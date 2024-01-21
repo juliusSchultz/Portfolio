@@ -1,49 +1,32 @@
 <template>
   <section class="about">
-    <p class="">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <NuxtImg src="side.jpeg" alt="Profile picture" class="about-pic" />
+    <SectionHeadline line1="Get To Know More" line2="About Me" />
+    <span class="about__text">
+      <p>
+        “Use your own understanding and don’t fail because of laziness or
+        cowardice,” this guiding principle of the Age of Enlightenment has
+        shaped me and drives me to constantly expand my horizons of knowledge.
+        <br />
+        <br />
+        In order to dive deeper into new technologies and especially software
+        develop, I decided to study international media computing. Currently,
+        topics that interest me quite a lot are artificial intelligence and web
+        development.
+      </p>
+    </span>
+    <NuxtImg src="side.jpeg" alt="Profile picture" class="about__pic" />
+    <div class="about__experience-wrapper">
+      <div class="about__experience-container">
+        <Icon icon="cast_for_education" />
+        <h3>Education</h3>
+        <p class="font-thin">
+          B.Sc. Bachelors Degree<br />University of Applied Sciences Berlin
+        </p>
       </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <NuxtImg
-              src="experience.png"
-              alt="Experience icon"
-              class="about__icon"
-            />
-            <h3>Experience</h3>
-            <p>2+ years <br />Frontend Development</p>
-          </div>
-          <div class="details-container">
-            <NuxtImg
-              src="education.png"
-              alt="Education icon"
-              class="about__icon"
-            />
-            <h3>Education</h3>
-            <p>
-              B.Sc. Bachelors Degree<br />University of Applied Sciences Berlin
-            </p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            “Use your own understanding and don’t fail because of laziness or
-            cowardice,” this guiding principle of the Age of Enlightenment has
-            shaped me and drives me to constantly expand my horizons of
-            knowledge.
-          </p>
-          <br />
-          <p>
-            In order to dive deeper into new technologies and especially
-            software develop, I decided to study international media computing.
-            Currently, topics that interest me quite a lot are artificial
-            intelligence and web development.
-          </p>
-        </div>
+      <div class="about__experience-container">
+        <Icon icon="work_history" />
+        <h3>Work Experience</h3>
+        <p class="font-thin">2+ years <br />Frontend Development</p>
       </div>
     </div>
   </section>
@@ -51,25 +34,37 @@
 
 <style>
 .about {
-  position: relative;
+  @apply flex flex-col;
 
-  &__icon {
-    width: 30px;
-    height: 30px;
+  &__text {
+    text-align: center;
+    @apply mb-14;
   }
-}
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
+  &__pic {
+    @apply w-[400px] h-[400px];
+    @apply rounded-2xl;
+    @apply self-center;
+    @apply mb-14;
+  }
 
-.about-containers,
-.about-details-container {
-  display: flex;
-}
+  &__experience-wrapper {
+    @apply flex flex-col;
+    @apply justify-between;
+    @apply gap-6;
 
-.about-pic {
-  border-radius: 2rem;
+    @screen md {
+      @apply flex-row;
+    }
+  }
+
+  &__experience-container {
+    width: 100%;
+    @apply text-white;
+    @apply p-8;
+    @apply bg-grey-32;
+    text-align: center;
+    @apply rounded-2xl;
+  }
 }
 </style>

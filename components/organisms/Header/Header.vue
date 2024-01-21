@@ -146,7 +146,7 @@ export default defineComponent({
     span {
       width: 100%;
       height: 2px;
-      background-color: black;
+      @apply bg-grey-16;
       transition: all 0.3 ease-in-out;
     }
   }
@@ -167,6 +167,16 @@ export default defineComponent({
   &__link {
     &--mobile {
       @apply flex;
+    }
+
+    &:hover {
+      @apply text-white;
+      @apply bg-blue-lighter;
+
+      @screen md {
+        @apply text-blue-darker;
+        @apply bg-white;
+      }
     }
   }
 

@@ -156,6 +156,7 @@ export default defineComponent({
     background-color: white;
     width: 100%;
     margin-top: 350px;
+    z-index: 1;
   }
 
   &__link-separator {

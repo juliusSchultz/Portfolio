@@ -17,21 +17,32 @@
     <NuxtImg src="side.jpeg" alt="Profile picture" class="about__pic" />
     <div class="about__experience-wrapper">
       <div class="about__experience-container">
-        <Icon icon="cast_for_education" />
-        <h3>Education</h3>
-        <p class="font-thin">
-          B.Sc. Bachelors Degree<br />University of Applied Sciences Berlin
-        </p>
+        <Icon
+          class="about__experience-icon"
+          icon="cast_for_education"
+          size="large"
+        />
+        <div class="about__experience-text">
+          <h3 class="about__experience-text--headline">Education</h3>
+          <p class="about__experience-text--description">
+            B.Sc. Bachelors Degree<br />University of Applied Sciences Berlin
+          </p>
+        </div>
       </div>
       <div class="about__experience-container">
-        <Icon icon="work_history" />
-        <h3>Work Experience</h3>
-        <p class="font-thin">2+ years <br />Frontend Development</p>
+        <Icon class="about__experience-icon" icon="work_history" size="large" />
+        <div class="about__experience-text">
+          <h3 class="about__experience-text--headline">Work Experience</h3>
+          <p class="about__experience-text--description">
+            2+ years <br />Frontend Development
+          </p>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
+<script setup lang="ts"></script>
 <style>
 .about {
   @apply flex flex-col;
@@ -61,10 +72,34 @@
   &__experience-container {
     width: 100%;
     @apply text-white;
-    @apply p-8;
     @apply bg-grey-32;
-    text-align: center;
     @apply rounded-2xl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__experience-icon {
+    padding: 46px;
+    @apply bg-blue;
+    @apply rounded-l-2xl;
+  }
+
+  &__experience-text {
+    @apply flex flex-col;
+    @apply gap-y-2;
+    @apply py-5;
+    @apply px-12;
+    @apply w-full;
+
+    &--headline {
+      @apply text-base;
+    }
+
+    &--description {
+      @apply font-thin;
+      @apply text-sm;
+    }
   }
 }
 </style>

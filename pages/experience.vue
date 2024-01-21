@@ -3,8 +3,8 @@
     <SectionHeadline line1="Explore My" line2="Experience" />
     <div class="experience__container-wrapper">
       <div class="experience__details-container">
-        <h2 class="experience-sub-title">Frontend Development</h2>
-        <div class="experience__article-container">
+        <h2 class="experience__container-title">Frontend Development</h2>
+        <div class="experience__container-skills">
           <ExperienceEntry skill="Nuxt" level="Experienced" />
           <ExperienceEntry skill="React" level="Intermediate" />
           <ExperienceEntry skill="Python" level="Intermediate" />
@@ -13,8 +13,8 @@
         </div>
       </div>
       <div class="experience__details-container">
-        <h2 class="experience-sub-title">Scrum Master</h2>
-        <div class="experience__article-container">
+        <h2 class="experience__container-title">Scrum Master</h2>
+        <div class="experience__container-skills">
           <ExperienceEntry skill="Events" level="Experienced" />
           <ExperienceEntry skill="Scrum Guide" level="Experienced" />
           <ExperienceEntry skill="Kanban" level="Intermediate" />
@@ -38,16 +38,14 @@
 
   &__details-container {
     padding: 1.5rem;
-    flex: 1;
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
-    cursor: pointer;
   }
 
-  &__article-container {
+  &__container-skills {
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
@@ -56,17 +54,11 @@
     justify-content: space-around;
   }
 
-  &__icon {
-    cursor: default;
-    width: 30px;
-    height: 30px;
+  &__container-title {
+    @apply text-grey-16;
+    @apply font-bold;
+    @apply text-2xl;
+    @apply mb-8;
   }
-}
-
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
 }
 </style>

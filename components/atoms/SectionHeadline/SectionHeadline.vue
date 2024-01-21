@@ -25,6 +25,7 @@ export default defineComponent({
 <style>
 .section-headline {
   margin-bottom: 40px;
+  @apply text-grey-16;
 
   &__headline {
     &--1 {

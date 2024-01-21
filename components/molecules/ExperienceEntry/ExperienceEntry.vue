@@ -33,9 +33,14 @@ export default defineComponent({
 
 <style>
 .experience-entry {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  @apply flex justify-around;
+  @apply cursor-pointer;
+  @apply w-40;
+  @apply gap-x-2;
+  @apply text-grey-16;
+
+  &:hover {
+    @apply text-grey-32;
+  }
 }
 </style>

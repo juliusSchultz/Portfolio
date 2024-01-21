@@ -73,6 +73,7 @@ export default defineComponent({
   justify-content: space-between;
   align-items: center;
   height: 17vh;
+  @apply text-grey-16;
 
   @screen md {
     justify-content: space-around;

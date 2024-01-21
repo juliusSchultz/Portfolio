@@ -1,88 +1,24 @@
 <template>
   <section class="experience">
-    <h6 class="experience__headline--1">Explore My</h6>
-    <h1 class="experience__headline--2">Experience</h1>
-    <div class="experience__details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="experience__article-container">
-            <article>
-              <Icon icon="verified" />
-              <div>
-                <h3>Nuxt</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <Icon icon="verified" />
-              <div>
-                <h3>React</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <Icon icon="verified" />
-              <div>
-                <h3>Python</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <Icon icon="verified" />
-              <div>
-                <h3>TransactSQL</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <Icon icon="verified" />
-              <div>
-                <h3>Java</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <Icon icon="verified" />
-              <div>
-                <h3>Swift</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
+    <SectionHeadline line1="Explore My" line2="Experience" />
+    <div class="experience__container-wrapper">
+      <div class="experience__details-container">
+        <h2 class="experience-sub-title">Frontend Development</h2>
+        <div class="experience__article-container">
+          <ExperienceEntry skill="Nuxt" level="Experienced" />
+          <ExperienceEntry skill="React" level="Intermediate" />
+          <ExperienceEntry skill="Python" level="Intermediate" />
+          <ExperienceEntry icon="verified" skill="Java" level="Experienced" />
+          <ExperienceEntry icon="verified" skill="Swift" level="Intermediate" />
         </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Scrum Master</h2>
-          <div class="experience__article-container">
-            <article>
-              <Icon icon="verified" />
-              <div>
-                <h3>Events</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <Icon icon="verified" />
-              <div>
-                <h3>Theory</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <Icon icon="verified" />
-              <div>
-                <h3>Kanban</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <Icon icon="verified" />
-              <div>
-                <h3>Waterfall</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
+      </div>
+      <div class="experience__details-container">
+        <h2 class="experience-sub-title">Scrum Master</h2>
+        <div class="experience__article-container">
+          <ExperienceEntry skill="Events" level="Experienced" />
+          <ExperienceEntry skill="Scrum Guide" level="Experienced" />
+          <ExperienceEntry skill="Kanban" level="Intermediate" />
+          <ExperienceEntry skill="Waterfall" level="Intermediate" />
         </div>
       </div>
     </div>
@@ -93,21 +29,22 @@
 .experience {
   position: relative;
 
-  &__headline {
-    &--1 {
-      text-align: center;
-    }
-
-    &--2 {
-      font-size: 3rem;
-      text-align: center;
-    }
+  &__container-wrapper {
+    @apply gap-y-9;
+    @apply mt-8;
+    @apply mb-4;
+    @apply flex flex-col;
   }
 
   &__details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    cursor: pointer;
   }
 
   &__article-container {
@@ -117,13 +54,6 @@
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
-  }
-
-  article {
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
   }
 
   &__icon {

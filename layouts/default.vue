@@ -6,10 +6,15 @@
   <Footer />
 </template>
 
-<script setup lang="ts"></script>
 <style>
 .page-content {
   min-height: 500px;
   @apply px-10;
+  @apply py-4;
+
+  @screen lg {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
 </style>

@@ -29,6 +29,7 @@ export default defineComponent({
 
   &__headline {
     &--1 {
+      @apply text-grey-32;
       text-align: center;
     }
 

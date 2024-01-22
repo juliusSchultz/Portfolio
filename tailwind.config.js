@@ -13,6 +13,20 @@ export default {
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
     },
+    boxShadow: {
+      none: '0 0 #0000',
+      button: '0 12px 12px -12px rgba(51, 48, 0, 0.4)',
+      'button-inverted': '0 12px 12px -12px rgba(255, 255, 255, 0.3)',
+      'border-red': 'inset 0 0 0 2px #dd1541',
+      'border-red-lighter': 'inset 0 0 0 2px #ff184b',
+      'border-grey-80': 'inset 0 0 0 2px #CCCCCC',
+      'border-black': 'inset 0 0 0 2px #000000',
+      'border-grey-16': 'inset 0 0 0 2px #292929',
+      'border-white': 'inset 0 0 0 2px #ffffff',
+      select: '0 48px 48px -48px #CCCCCC',
+      'slider-handle': '0 0 0 4px rgba(0, 0, 0, 0.05)',
+      'black-15': '0px 8px 32px rgba(0, 0, 0, 0.15)',
+    },
     colors: {
       red: '#dd1541',
       'red-darker': '#bd1237',

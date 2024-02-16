@@ -230,7 +230,7 @@ export default defineComponent({
 
     &--error {
       @apply rounded-t-md;
-      @apply shadow-border-red;
+      @apply shadow-border-blue;
       @apply rounded-b-none;
 
       &::-webkit-contacts-auto-fill-button {

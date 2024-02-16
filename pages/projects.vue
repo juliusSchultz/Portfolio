@@ -13,12 +13,12 @@
           <p class="projects__project-description">
             Development of an online shop at diva-e on behalf of Pfeiffer Vacuum
           </p>
-          <button
+          <Button
             class="btn btn-color-2"
-            onclick="location.href='https://webportal.pfeiffer-vacuum.com/global/de'"
-          >
-            Website
-          </button>
+            to="https://webportal.pfeiffer-vacuum.com/global/de"
+            label="Website"
+            variant="secondary"
+          />
         </div>
       </div>
       <div class="projects__unit">
@@ -30,15 +30,14 @@
         <div class="projects__text">
           <h3 class="projects__project-headline">Bloomreach Connector</h3>
           <p class="projects__project-description">
-            Creation of a Connector for Nuxt.js projects to the CMS of npm
-            package
+            Creation of a reusable Connector for Nuxt.js projects
           </p>
-          <button
-            class="btn"
-            onclick="location.href='https://www.npmjs.com/package/bloomreach-with-nuxt'"
-          >
-            npm package
-          </button>
+          <Button
+            to="https://www.npmjs.com/package/bloomreach-with-nuxt"
+            label="npm package"
+            variant="secondary"
+            shape="outlined"
+          />
         </div>
       </div>
     </div>
@@ -50,30 +49,43 @@
 <style>
 .projects {
   @apply text-grey-16;
+  @apply flex flex-col;
+  @apply items-center;
 
   &__wrapper {
-    @apply flex flex-col;
+    @apply grid;
+    @apply grid-cols-1;
     @apply justify-center;
-    @apply gap-x-4;
+    @apply gap-8;
+    align-items: center;
+    width: fit-content;
 
     @screen md {
+      @apply grid-cols-2;
       @apply flex-row;
     }
   }
 
   &__unit {
-    padding: 20px;
+    @apply flex flex-col;
+    @apply justify-between;
+    @apply p-5;
+    @apply rounded-sm;
+    @apply h-full;
+    @apply text-center;
+    @apply max-w-[450px];
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    max-width: 450px;
-    text-align: center;
   }
 
   &__picture {
-    @apply w-[300px] h-[300px];
+    @apply w-full;
     border-radius: 2rem;
-    @apply pb-6;
+  }
+
+  &__text {
+    @apply pt-6;
   }
 
   &__project-headline {

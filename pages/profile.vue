@@ -8,20 +8,23 @@
       <h1 class="title">Julius Schultz</h1>
       <p class="section__text__p2">Frontend Developer</p>
       <div class="btn-container">
-        <button
-          class="btn btn-diva-e"
-          onclick="window.open('https://www.diva-e.com/de/')"
-        >
-          My Company
-        </button>
-        <button class="btn btn-color-2" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
+        <Button
+          to="https://www.diva-e.com/de/"
+          label="My Company"
+          variant="secondary"
+        />
+        <Button
+          to="./contact"
+          label="Contact Info"
+          variant="secondary"
+          shape="outlined"
+        />
       </div>
     </div>
   </section>
 </template>
 
+<script setup lang="ts"></script>
 <style>
 .profile {
   display: flex;

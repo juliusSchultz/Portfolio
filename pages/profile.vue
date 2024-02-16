@@ -1,23 +1,27 @@
 <template>
   <section class="profile">
-    <div class="section__pic-container">
-      <NuxtImg src="profile.png" alt="Julius Schultz profile picture" />
+    <div class="profile__pic-container">
+      <NuxtImg src="profile.png" alt="Profile picture" />
     </div>
-    <div class="section__text">
-      <p class="section__text__p1">👋 Hello, I'm</p>
-      <h1 class="title">Julius Schultz</h1>
-      <p class="section__text__p2">Frontend Developer</p>
-      <div class="btn-container">
+    <div class="profile__text">
+      <p class="profile__text--p1">👋 Hello, I'm</p>
+      <h1 class="profile__title">Julius Schultz</h1>
+      <p class="profile__text--p2">Frontend Developer</p>
+      <div class="profile__btn-container">
         <Button
           to="https://www.diva-e.com/de/"
-          label="My Company"
+          label="Company"
           variant="secondary"
+          class="profile__btn"
+          icon="apartment"
         />
         <Button
           to="./contact"
-          label="Contact Info"
+          label="Contact"
           variant="secondary"
           shape="outlined"
+          class="profile__btn"
+          icon="connect_without_contact"
         />
       </div>
     </div>
@@ -27,100 +31,60 @@
 <script setup lang="ts"></script>
 <style>
 .profile {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 80vh;
-}
+  @apply flex flex-col;
+  @apply justify-center;
+  @apply my-10;
+  @apply gap-y-8;
+  @apply items-center;
 
-.section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
+  @screen md {
+    @apply flex-row;
+    @apply gap-x-20;
+    @apply my-20;
+  }
 
-.section__text {
-  align-self: center;
-  text-align: center;
-}
+  &__pic-container {
+    @apply flex;
+    @apply w-[280px] h-[280px];
 
-.section__text p {
-  font-weight: 600;
-}
+    @screen lg {
+      @apply w-[400px] h-[400px];
+    }
+  }
 
-.section__text__p1 {
-  text-align: center;
-}
+  &__text {
+    @apply self-center;
+    @apply text-center;
+    @apply font-semibold;
+    &--p1 {
+      @apply text-grey-32;
+    }
 
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
+    &--p2 {
+      @apply text-2xl;
+      @apply mb-4;
+      @apply text-grey-32;
+    }
+  }
 
-.title {
-  font-size: 3rem;
-  text-align: center;
-}
+  &__title {
+    @apply text-5xl;
+    @apply text-center;
+  }
 
-/* BUTTONS */
+  &__btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
 
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
+  &__btn {
+    transition: all 100ms ease;
 
-.btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
-}
-
-.btn-color-1,
-.btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover,
-. btn-diva-e {
-  cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
-}
-
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-  background: none;
-}
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-diva-e {
-  background: rgb(5, 19, 255);
-  border-color: rgb(5, 19, 255);
-  color: white;
-}
-
-.btn-diva-e:hover {
-  font-style: italic;
-  box-shadow: 0 0 10px 5px rgba(5, 19, 255, 0.6);
-}
-
-.btn-container {
-  gap: 1rem;
+    &:hover {
+      font-style: italic;
+      box-shadow: 0 0 10px 5px rgba(5, 19, 255, 0.3);
+    }
+  }
 }
 </style>

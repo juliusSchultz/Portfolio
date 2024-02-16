@@ -154,31 +154,6 @@ export default defineComponent({
       }
     }
 
-    &.button--variant-selection-preselected,
-    &.button--variant-selection {
-      @apply bg-blue;
-      @apply text-white;
-      -webkit-text-fill-color: var(--white);
-      @apply shadow-button;
-
-      &:hover {
-        @apply bg-blue-lighter;
-      }
-    }
-
-    &.button--variant-selection-preselected {
-      @apply shadow-border-blue;
-      @apply bg-white;
-      @apply text-grey-16;
-      -webkit-text-fill-color: var(--grey-16);
-
-      &:hover {
-        @apply shadow-border-blue-lighter;
-        @apply text-white;
-        -webkit-text-fill-color: var(--white);
-      }
-    }
-
     &.button--inverted {
       @apply bg-white;
       @apply text-black;
@@ -223,19 +198,6 @@ export default defineComponent({
         -webkit-text-fill-color: var(--blue-lighter);
         @apply bg-blue-lighter;
         @apply bg-opacity-10;
-      }
-    }
-
-    &.button--variant-selection-preselected,
-    &.button--variant-selection {
-      @apply shadow-border-grey-80;
-      @apply bg-white;
-
-      &:hover {
-        @apply shadow-border-blue-lighter;
-        @apply bg-blue-lighter;
-        @apply text-white;
-        -webkit-text-fill-color: var(--white);
       }
     }
 

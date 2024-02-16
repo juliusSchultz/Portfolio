@@ -18,6 +18,7 @@
             to="https://webportal.pfeiffer-vacuum.com/global/de"
             label="Website"
             variant="secondary"
+            icon="arrow_forward"
           />
         </div>
       </div>
@@ -37,6 +38,7 @@
             label="npm package"
             variant="secondary"
             shape="outlined"
+            icon="arrow_forward"
           />
         </div>
       </div>

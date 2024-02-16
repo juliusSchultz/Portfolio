@@ -35,14 +35,7 @@ export default {
   variant: {
     type: String,
     default: 'primary',
-    validator: (val) =>
-      [
-        'primary',
-        'secondary',
-        'variant-selection',
-        'variant-selection-preselected',
-        'inverted',
-      ].includes(val),
+    validator: (val) => ['primary', 'secondary', 'inverted'].includes(val),
   },
   /**
    * Defines the button shape

@@ -1,7 +1,7 @@
 <template>
-  <div class="pv-input">
+  <div class="input">
     <PvLabel :optional="!required" :label="label" />
-    <div class="pv-input__wrapper">
+    <div class="input__wrapper">
       <input
         v-bind="{ placeholder, disabled, ...$attrs }"
         ref="input"
@@ -9,10 +9,10 @@
         :required="required"
         :type="inputType"
         :min="min"
-        class="pv-input__element"
+        class="input__element"
         :class="{
-          'pv-input__element--icon': icon,
-          'pv-input__element--error': !!validation.getError(),
+          'input__element--icon': icon,
+          'input__element--error': !!validation.getError(),
         }"
         :placeholder="placeholder"
         @keypress.enter="$emit('submit', internalValue)"
@@ -22,8 +22,8 @@
       />
       <Icon
         v-if="icon || validation.getError()"
-        class="pv-input__icon"
-        :class="{ 'pv-input__icon--error': !!validation.getError() }"
+        class="input__icon"
+        :class="{ 'input__icon--error': !!validation.getError() }"
         :icon="!!validation.getError() ? 'error_outline' : icon"
         @click.native="$emit('click:icon', internalValue)"
       />
@@ -40,7 +40,7 @@ import { defineComponent, ref, toRefs, watch } from 'vue'
 import { useInputValidator } from '~/composables/useValidator'
 
 export default defineComponent({
-  name: 'PvInput',
+  name: 'Input',
   props: {
     /**
      * The input value
@@ -169,7 +169,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.pv-input {
+.input {
   @apply relative;
   @apply w-full;
 
@@ -220,7 +220,7 @@ export default defineComponent({
       @apply text-grey-64;
     }
 
-    &:focus + .pv-input__icon {
+    &:focus + .input__icon {
       @apply text-grey-16;
     }
 

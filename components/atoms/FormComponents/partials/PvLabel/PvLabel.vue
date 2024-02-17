@@ -1,7 +1,7 @@
 <template>
-  <label v-if="label" :for="tagName" class="pv-label">
+  <label v-if="label" :for="tagName" class="label">
     <span>{{ label }}</span>
-    <span v-if="optional" class="pv-label__optional">Optional</span>
+    <span v-if="optional" class="label__optional">(Optional)</span>
   </label>
 </template>
 
@@ -37,8 +37,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-.pv-label {
-  @apply text-grey-16;
+.label {
+  @apply text-grey-32;
+  @apply text-xs;
   @apply flex;
   @apply justify-between;
 

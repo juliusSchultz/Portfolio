@@ -16,7 +16,12 @@ const recipients = [
 export default defineEventHandler(async (event) => {
   const template = await useCompiler('NormalTemplate.vue', {
     props: {
-      url: 'https://vuemail.net/',
+      firstName: 'Peter',
+      lastName: 'Fuss',
+      company: 'Company' || '-',
+      mail: 'peter@fuss.de' || '-',
+      telephone: '0177 4444' || '-',
+      message: 'Nachricht',
     },
   })
 

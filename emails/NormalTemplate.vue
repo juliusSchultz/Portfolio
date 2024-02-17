@@ -1,12 +1,42 @@
 <template>
   <e-html lang="en">
-    <e-button :href="url"> View on GitHub </e-button>
+    <ERow>
+      <EText>Name: {{ firstName }} {{ lastName }}</EText>
+      <EText>Firma: {{ company }}</EText>
+      <EText>E-Mail: {{ mail }}</EText>
+      <EText>Telefon: {{ telephone }}</EText>
+      <EText>Nachricht: {{ message }}</EText>
+    </ERow>
   </e-html>
 </template>
 
 <script setup>
 defineProps({
-  url: {
+  firstName: {
+    type: String,
+    default: '',
+  },
+  lastName: {
+    type: String,
+    default: '',
+  },
+  company: {
+    type: String,
+    default: '',
+  },
+  mail: {
+    type: String,
+    default: '',
+  },
+  telephone: {
+    type: String,
+    default: '',
+  },
+  subject: {
+    type: String,
+    default: '',
+  },
+  message: {
     type: String,
     default: '',
   },

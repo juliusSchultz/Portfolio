@@ -11,7 +11,17 @@ export default defineNuxtConfig({
     dirs: [{ path: '~/components', pathPrefix: false }],
   },
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@pinia/nuxt'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image',
+    '@pinia/nuxt',
+    '@vue-email/nuxt',
+  ],
+
+  vueEmail: {
+    // baseUrl: 'https://vue-email-demo.vercel.app/',
+    autoImport: true,
+  },
 
   image: {
     dir: 'assets/images',

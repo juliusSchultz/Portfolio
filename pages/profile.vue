@@ -28,7 +28,6 @@
   </section>
 </template>
 
-<script setup lang="ts"></script>
 <style>
 .profile {
   @apply flex flex-col;

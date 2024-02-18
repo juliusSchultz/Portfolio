@@ -26,7 +26,7 @@ export default defineComponent({
 <style lang="scss">
 .social-media {
   @apply col-span-full;
-  @apply py-6;
+  @apply pb-6;
   @apply flex justify-center gap-6;
 
   @screen md {

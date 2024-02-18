@@ -1,7 +1,10 @@
 <template>
   <header>
     <nav class="header" :class="'header--tablet'">
-      <div class="header__logo">Julius Schultz</div>
+      <div class="header__logo">
+        <NuxtImg class="header__logo-pic" src="Logo.png" alt="Logo" />
+        <div>Julius Schultz</div>
+      </div>
       <div>
         <ul class="header__links">
           <li v-for="(link, index) in links" :key="index">
@@ -96,6 +99,9 @@ export default defineComponent({
   }
 
   &__logo {
+    @apply flex flex-row;
+    @apply gap-x-4;
+    @apply items-center;
     padding-left: 40px;
     @apply text-xl;
 
@@ -103,6 +109,10 @@ export default defineComponent({
       padding-left: 0;
       @apply text-3xl;
     }
+  }
+
+  &__logo-pic {
+    @apply w-[70px] h-[70px];
   }
 
   &__logo:hover {

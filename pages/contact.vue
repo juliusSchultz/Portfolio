@@ -59,7 +59,7 @@ const contactStore = useContactStore()
 const { sendMail } = contactStore
 
 const submit = async () => {
-  await sendMail()
+  await sendMail(requestData.value)
 }
 </script>
 

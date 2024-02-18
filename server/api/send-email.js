@@ -14,14 +14,16 @@ const recipients = [
 ]
 
 export default defineEventHandler(async (event) => {
+  const body = await readBody(event)
+
   const template = await useCompiler('NormalTemplate.vue', {
     props: {
-      firstName: 'Peter',
-      lastName: 'Fuss',
-      company: 'Company' || '-',
-      mail: 'peter@fuss.de' || '-',
-      telephone: '0177 4444' || '-',
-      message: 'Nachricht',
+      firstName: body?.firstName || '',
+      lastName: body?.lastName || '',
+      company: body?.company || '',
+      mail: body?.mail || '-',
+      telephone: body?.telephone || '-',
+      message: body?.message || '',
     },
   })
 

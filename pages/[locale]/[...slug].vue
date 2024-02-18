@@ -30,7 +30,8 @@
 
 <style>
 .profile {
-  @apply flex flex-col;
+  @apply flex;
+  @apply flex-col;
   @apply justify-center;
   @apply my-10;
   @apply gap-y-8;

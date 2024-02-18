@@ -8,7 +8,6 @@
         v-model="internalValue"
         :required="required"
         :type="inputType"
-        :min="min"
         class="input__element"
         :class="{
           'input__element--icon': icon,
@@ -38,6 +37,7 @@
 <script>
 import { defineComponent, ref, toRefs, watch } from 'vue'
 import { useInputValidator } from '~/composables/useValidator'
+import { useSanitizer } from '~/composables/sanitizer/useSanitizer.js'
 
 export default defineComponent({
   name: 'Input',
@@ -101,11 +101,6 @@ export default defineComponent({
       type: Object,
       default: () => ({}),
     },
-
-    min: {
-      type: String,
-      default: null,
-    },
   },
   emits: [
     /**
@@ -133,25 +128,18 @@ export default defineComponent({
     'update:modelValue',
   ],
   setup(props, { emit }) {
-    const { modelValue: propsValue, min } = toRefs(props)
+    const sanitizer = useSanitizer()
+    const { modelValue: propsValue } = toRefs(props)
     const internalValue = ref(props.modelValue)
 
     const updateValue = () => {
-      if (min.value && internalValue.value < min.value) {
-        internalValue.value = min
-      } else {
-        emit('update:modelValue', internalValue.value)
-      }
+      emit('update:modelValue', sanitizer.clear(internalValue.value))
     }
 
     const validation = useInputValidator(props.rules, internalValue)
 
     watch(propsValue, () => {
-      if (
-        !min.value ||
-        (propsValue.value >= min.value &&
-          propsValue.value !== internalValue.value)
-      ) {
+      if (sanitizer.clear(internalValue.value)) {
         internalValue.value = propsValue.value
       }
     })
@@ -230,7 +218,7 @@ export default defineComponent({
 
     &--error {
       @apply rounded-t-md;
-      @apply shadow-border-blue;
+      @apply shadow-border-red;
       @apply rounded-b-none;
 
       &::-webkit-contacts-auto-fill-button {

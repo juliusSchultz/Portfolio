@@ -17,6 +17,7 @@ export default {
       none: '0 0 #0000',
       button: '0 12px 12px -12px rgba(51, 48, 0, 0.4)',
       'button-inverted': '0 12px 12px -12px rgba(255, 255, 255, 0.3)',
+      'border-red': 'inset 0 0 0 2px #dd1541',
       'border-blue': 'inset 0 0 0 2px #1541dd',
       'border-blue-lighter': 'inset 0 0 0 2px #184bff',
       'border-grey-80': 'inset 0 0 0 2px #CCCCCC',

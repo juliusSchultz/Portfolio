@@ -52,6 +52,7 @@
     "@pinia/nuxt": "^0.4.11",
     "@vue-email/nuxt": "^0.8.14",
     "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
     "mailersend": "^2.2.0",
     "material-design-icons-iconfont": "^6.1.1",
     "pinia": "^2.1.7",

@@ -6,12 +6,20 @@
         v-model="requestData.firstName"
         label="First name"
         placeholder="First name"
+        :required="true"
+        :rules="{
+          required: helpers.withMessage(requiredMessage, required),
+        }"
         @input="$emit('update', requestData)"
       />
       <InputField
         v-model="requestData.lastName"
         label="Last name"
         placeholder="Last name"
+        :required="true"
+        :rules="{
+          required: helpers.withMessage(requiredMessage, required),
+        }"
         @input="$emit('update', requestData)"
       />
       <InputField
@@ -36,6 +44,10 @@
         v-model="requestData.message"
         label="Message"
         placeholder="Your message"
+        :required="true"
+        :rules="{
+          required: helpers.withMessage(requiredMessage, required),
+        }"
         @input="$emit('update', requestData)"
       />
     </div>
@@ -45,21 +57,33 @@
 
 <script setup lang="ts">
 import { useContactStore } from '~/stores/contact/contact'
+import { required, helpers } from '@vuelidate/validators'
+import useVuelidate from '@vuelidate/core'
+
+const requiredMessage = 'This field is required'
 
 const requestData = ref({
-  firstName: 'Peter',
-  lastName: 'Fuss',
-  company: 'Company',
-  mail: 'peter@fuss.de',
-  telephone: '0177 4444',
-  message: 'Nachricht',
+  firstName: '',
+  lastName: '',
+  company: '',
+  mail: '',
+  telephone: '',
+  message: '',
 })
 
 const contactStore = useContactStore()
 const { sendMail } = contactStore
+const v = useVuelidate()
+
+const formHasNoErrors = computed(() => {
+  v.value.$validate()
+  return v.value.$errors.length + v.value.$silentErrors.length === 0
+})
 
 const submit = async () => {
-  await sendMail(requestData.value)
+  if (formHasNoErrors.value) {
+    await sendMail(requestData.value)
+  }
 }
 </script>
 
@@ -70,7 +94,7 @@ const submit = async () => {
   &__input-fields {
     @apply flex flex-col;
     @apply gap-4;
-    @apply mb-4;
+    @apply mb-7;
   }
 }
 </style>

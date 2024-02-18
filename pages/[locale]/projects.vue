@@ -3,9 +3,9 @@
     <SectionHeadline line1="Browse My Recent" line2="Projects" />
     <div class="projects__wrapper">
       <div class="projects__unit">
-        <NuxtImg
+        <img
           class="projects__picture"
-          src="pfeiffer-logo.jpeg"
+          src="~/assets/images/pfeiffer-logo.jpeg"
           alt="Julius Schultz profile picture"
         />
         <div class="projects__text">
@@ -23,9 +23,9 @@
         </div>
       </div>
       <div class="projects__unit">
-        <NuxtImg
+        <img
           class="projects__picture"
-          src="bloomreach.jpeg"
+          src="~/assets/images/bloomreach.jpeg"
           alt="Julius Schultz profile picture"
         />
         <div class="projects__text">

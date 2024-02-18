@@ -45,7 +45,7 @@
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-junit-formatter": "^0.2.2",
     "stylelint-order": "^6.0.4",
-    "stylelint-processor-html": "^1.0.0",
+    "@mapbox/stylelint-processor-arbitrary-tags": "0.4.0",
     "vue": "^3.4.19",
     "vue-router": "^4.2.5"
   },

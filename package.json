@@ -35,7 +35,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "eslint-plugin-vue": "^9.3.0",
-    "nuxt": "^3.9.3",
+    "nuxt": "^3.10.2",
     "prettier": "^2.8.5",
     "sass": "^1.70.0",
     "stylelint": "^14.11.0",
@@ -46,11 +46,11 @@
     "stylelint-junit-formatter": "^0.2.2",
     "stylelint-order": "^6.0.1",
     "stylelint-processor-html": "^1.0.0",
-    "vue": "^3.4.14",
+    "vue": "^3.4.19",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.11",
+    "@pinia/nuxt": "^0.5.1",
     "@vue-email/nuxt": "^0.8.14",
     "@vuelidate/core": "^2.0.3",
     "@vuelidate/validators": "^2.0.4",

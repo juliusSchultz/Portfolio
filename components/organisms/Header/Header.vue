@@ -1,10 +1,10 @@
 <template>
   <header>
     <nav class="header" :class="'header--tablet'">
-      <div class="header__logo">
+      <NuxtLink class="header__logo" to="./">
         <NuxtImg class="header__logo-pic" src="Logo.png" alt="Logo" />
         <div>Julius Schultz</div>
-      </div>
+      </NuxtLink>
       <div>
         <ul class="header__links">
           <li v-for="(link, index) in links" :key="index">
@@ -16,7 +16,10 @@
       </div>
     </nav>
     <nav class="header" :class="'header--mobile'">
-      <div class="header__logo">Julius Schultz</div>
+      <NuxtLink class="header__logo" to="./">
+        <NuxtImg class="header__logo-pic" src="Logo.png" alt="Logo" />
+        <div>Julius Schultz</div>
+      </NuxtLink>
       <div class="header__hamburger-menu">
         <div class="header__hamburger-icon" @click="toggleMenu()">
           <span></span>
@@ -100,23 +103,28 @@ export default defineComponent({
 
   &__logo {
     @apply flex flex-row;
-    @apply gap-x-4;
     @apply items-center;
     padding-left: 40px;
     @apply text-xl;
+    @apply gap-x-3;
 
     @screen md {
+      @apply gap-x-4;
       padding-left: 0;
       @apply text-3xl;
+    }
+
+    &:hover {
+      @apply cursor-pointer;
     }
   }
 
   &__logo-pic {
-    @apply w-[70px] h-[70px];
-  }
+    @apply w-[40px] h-[40px];
 
-  &__logo:hover {
-    cursor: default;
+    @screen md {
+      @apply w-[70px] h-[70px];
+    }
   }
 
   &__links {

@@ -8,13 +8,7 @@ export default defineNuxtRouteMiddleware((to) => {
   }
 
   let { locale } = to.params
-
   const slug = to.fullPath
-    .replaceAll('/de/', '/')
-    .replaceAll('/en/', '/')
-    .replaceAll('/pl/', '/')
-    .replaceAll('/fr/', '/')
-    .replaceAll('/zh/', '/')
 
   if (!$i18n.localeCodes.value.includes(locale)) {
     locale = null
@@ -27,7 +21,6 @@ export default defineNuxtRouteMiddleware((to) => {
   }
 
   if (!locale) {
-    console.log('here')
     locale = $i18n.locale.value
 
     if (!$i18n.getLocaleCookie()) {

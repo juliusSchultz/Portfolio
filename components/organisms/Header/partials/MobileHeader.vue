@@ -4,7 +4,8 @@
       <NuxtImg class="mobile-header__logo-pic" src="Logo.png" alt="Logo" />
       <div>Julius Schultz</div>
     </NuxtLink>
-    <div class="mobile-header__hamburger-menu">
+    <div class="mobile-header__right-container">
+      <LanguageSwitcher size="large" />
       <div class="mobile-header__hamburger-icon" @click="toggleMenu()">
         <span></span>
         <span></span>
@@ -82,6 +83,13 @@ export default defineComponent({
     @apply w-[40px] h-[40px];
   }
 
+  &__right-container {
+    @apply flex flex-row;
+    @apply gap-4;
+    align-items: center;
+    @apply pr-10;
+  }
+
   &__menu-options {
     @apply flex flex-col;
     @apply gap-y-3;
@@ -94,10 +102,6 @@ export default defineComponent({
     font-size: 1.5rem;
   }
 
-  &__hamburger-menu {
-    padding-right: 40px;
-  }
-
   &__hamburger-icon {
     display: flex;
     flex-direction: column;
@@ -108,8 +112,8 @@ export default defineComponent({
 
     span {
       width: 100%;
-      height: 2px;
-      @apply bg-grey-16;
+      height: 2.5px;
+      @apply bg-grey-32;
       transition: all 0.3 ease-in-out;
     }
   }

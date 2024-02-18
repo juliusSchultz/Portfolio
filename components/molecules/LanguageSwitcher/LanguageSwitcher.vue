@@ -1,8 +1,8 @@
 <template>
   <div ref="target" class="language-switcher">
     <div class="language-switcher__button" @click="isActive = !isActive">
-      <Icon icon="language" />
-      <div>Language</div>
+      <Icon :size="size" icon="language" />
+      <div class="language-switcher__label">Language</div>
     </div>
     <div v-if="isActive" class="language-switcher__content">
       <ul>
@@ -22,6 +22,14 @@
 import { onClickOutside } from '@vueuse/core'
 import { switchLocale } from '~/utils/switchLocale'
 import { useLanguageSwitch } from '~/composables/useLanguageSwitch'
+
+defineProps({
+  size: {
+    type: String,
+    default: 'base',
+    validator: (val) => ['base', 'large'].includes(val),
+  },
+})
 
 const { locales } = useI18n()
 
@@ -43,14 +51,30 @@ onLanguageSwitched('switcher', () => {
   &__button {
     @apply flex flex-row;
     @apply gap-x-3;
-    @apply text-grey-48;
+    @apply text-grey-32;
     @apply cursor-pointer;
+
+    @screen lg {
+      @apply text-grey-48;
+    }
+  }
+
+  &__label {
+    @apply hidden;
+
+    @screen lg {
+      @apply block;
+    }
   }
 
   &__content {
     @apply absolute;
-    width: 12.75rem;
+    width: 11rem;
     padding-top: 1rem;
+
+    @scree lg {
+      width: 12.75rem;
+    }
   }
 
   &__content ul {
@@ -60,10 +84,10 @@ onLanguageSwitched('switcher', () => {
     @apply rounded-md;
     @apply bg-white;
     @apply relative;
-    bottom: 14.75rem;
     @apply border-2;
     @apply border-grey-80;
     @apply shadow-black-15;
+    right: 4.5rem;
 
     @screen lg {
       @apply bottom-0;
@@ -78,11 +102,15 @@ onLanguageSwitched('switcher', () => {
 
   &__content li {
     @apply pl-2.5;
-    @apply text-base;
-    @apply leading-6;
+    @apply text-sm;
+    @apply leading-5;
     @apply py-3;
     @apply px-4;
     @apply text-grey-16;
+
+    @screen lg {
+      @apply text-base;
+    }
   }
 }
 </style>

@@ -45,6 +45,7 @@ export default defineNuxtConfig({
 
   image: {
     dir: 'assets/images',
+    provider: 'netlify',
   },
 
   ssr: true,

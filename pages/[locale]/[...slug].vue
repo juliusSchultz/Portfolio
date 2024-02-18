@@ -1,7 +1,7 @@
 <template>
   <section class="profile">
     <div class="profile__pic-container">
-      <img src="~/assets/images/profile.png" alt="Profile picture" />
+      <NuxtImg src="profile.png" alt="Profile picture" />
     </div>
     <div class="profile__text">
       <p class="profile__text--p1">👋 Hello, I'm</p>

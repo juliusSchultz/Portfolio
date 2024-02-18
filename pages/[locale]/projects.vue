@@ -23,9 +23,9 @@
         </div>
       </div>
       <div class="projects__unit">
-        <img
+        <NuxtImg
           class="projects__picture"
-          src="~/assets/images/bloomreach.jpeg"
+          src="bloomreach.jpeg"
           alt="Julius Schultz profile picture"
         />
         <div class="projects__text">

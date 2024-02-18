@@ -4,8 +4,8 @@
     <div class="contact__input-fields">
       <InputField
         v-model="requestData.firstName"
-        label="First name"
-        placeholder="First name"
+        :label="$t('form.firstName')"
+        :placeholder="$t('form.firstName')"
         :required="true"
         :rules="{
           required: helpers.withMessage(requiredMessage, required),

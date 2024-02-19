@@ -13,6 +13,21 @@
     "companyButtonLabel": "Firma",
     "contactButtonLabel": "Kontakt"
   },
+  "aboutPage": {
+    "introduction1" : "“Use your own understanding and don’t fail because of laziness or cowardice,” this guiding principle of the Age of Enlightenment has shaped me and drives me to constantly expand my horizons of knowledge.",
+    "introduction2" : "In order to dive deeper into new technologies and especially software development, I decided to study international media computing. Currently, topics that interest me quite a lot are artificial intelligence and web development.",
+    "profilePictureAlt": "Profile picture",
+    "education": {
+      "label": "Education",
+      "bachelor": "B.Sc. Bachelors Degree",
+      "university": "University of Applied Sciences Berlin"
+    },
+    "workExperience": {
+      "label": "Work Experience",
+      "time": "2+ years",
+      "profession": "Frontend Development"
+    }
+  },
   "form": {
     "firstName": "Imię"
   }

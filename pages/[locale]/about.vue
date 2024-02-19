@@ -3,20 +3,15 @@
     <SectionHeadline line1="Get To Know More" line2="About Me" />
     <span class="about__text">
       <p>
-        “Use your own understanding and don’t fail because of laziness or
-        cowardice,” this guiding principle of the Age of Enlightenment has
-        shaped me and drives me to constantly expand my horizons of knowledge.
+        {{ $t('aboutPage.introduction1') }}
         <br />
         <br />
-        In order to dive deeper into new technologies and especially software
-        develop, I decided to study international media computing. Currently,
-        topics that interest me quite a lot are artificial intelligence and web
-        development.
+        {{ $t('aboutPage.introduction2') }}
       </p>
     </span>
     <img
       src="~/assets/images/side.jpeg"
-      alt="Profile picture"
+      :alt="$t('aboutPage.profilePictureAlt')"
       class="about__pic"
     />
     <div class="about__experience-wrapper">
@@ -27,18 +22,26 @@
           size="large"
         />
         <div class="about__experience-text">
-          <h3 class="about__experience-text--headline">Education</h3>
+          <h3 class="about__experience-text--headline">
+            {{ $t('aboutPage.education.label') }}
+          </h3>
           <p class="about__experience-text--description">
-            B.Sc. Bachelors Degree<br />University of Applied Sciences Berlin
+            {{ $t('aboutPage.education.bachelor') }}
+            <br />
+            {{ $t('aboutPage.education.university') }}
           </p>
         </div>
       </div>
       <div class="about__experience-container">
         <Icon class="about__experience-icon" icon="work_history" size="large" />
         <div class="about__experience-text">
-          <h3 class="about__experience-text--headline">Work Experience</h3>
+          <h3 class="about__experience-text--headline">
+            {{ $t('aboutPage.workExperience.label') }}
+          </h3>
           <p class="about__experience-text--description">
-            2+ years <br />Frontend Development
+            {{ $t('aboutPage.workExperience.time') }}
+            <br />
+            {{ $t('aboutPage.workExperience.profession') }}
           </p>
         </div>
       </div>

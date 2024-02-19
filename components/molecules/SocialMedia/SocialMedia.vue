@@ -36,7 +36,7 @@ export default defineComponent({
   &__icon {
     @apply text-grey-48;
     @apply p-1;
-    @apply tw-transition-colors tw-ease-out;
+    @apply transition-colors ease-out;
     @apply tw-block;
 
     &:hover {

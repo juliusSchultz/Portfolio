@@ -1,8 +1,15 @@
 {
+  "header": {
+    "imageLogoAlt": "Logo",
+    "aboutLabel": "Über mich",
+    "experienceLabel": "Erfahrung",
+    "projectsLabel": "Projekte",
+    "contactLabel": "Kontakt"
+  },
   "indexPage": {
     "introduction": "Hi, ich bin",
     "name": "Julius Schultz",
-    "jobTitle": "Frontend Developer",
+    "jobTitle": "Frontend Entwickler",
     "companyButtonLabel": "Unternehmen",
     "contactButtonLabel": "Kontakt"
   },

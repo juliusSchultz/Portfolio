@@ -1,4 +1,11 @@
 {
+  "header": {
+    "imageLogoAlt": "Logo",
+    "aboutLabel": "O mnie",
+    "experienceLabel": "Doświadczenie",
+    "projectsLabel": "Projektowanie",
+    "contactLabel": "Kontakt"
+  },
   "indexPage": {
     "introduction": "Cześć jestem",
     "name": "Juliusz Schultz",

@@ -4,9 +4,9 @@
       <img
         class="mobile-header__logo-pic"
         src="~/assets/images/Logo.png"
-        alt="Logo"
+        :alt="$t('header.imageLogoAlt')"
       />
-      <div>Julius Schultz</div>
+      <div>{{ $t('indexPage.name') }}</div>
     </NuxtLink>
     <div class="mobile-header__right-container">
       <LanguageSwitcher size="large" />
@@ -40,16 +40,18 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'MobileHeader',
   setup() {
+    const { t } = useI18n()
+
     const menuOpen = ref(false)
     const toggleMenu = () => {
       menuOpen.value = !menuOpen.value
     }
 
     const links = [
-      { href: '/about', label: 'About' },
-      { href: '/experience', label: 'Experience' },
-      { href: '/projects', label: 'Projects' },
-      { href: '/contact', label: 'Contact' },
+      { href: '/about', label: t('header.aboutLabel') },
+      { href: '/experience', label: t('header.experienceLabel') },
+      { href: '/projects', label: t('header.projectsLabel') },
+      { href: '/contact', label: t('header.contactLabel') },
     ]
 
     return {

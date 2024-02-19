@@ -4,9 +4,9 @@
       <img
         class="tablet-header__logo-pic"
         src="~/assets/images/Logo.png"
-        alt="Logo"
+        :alt="$t('header.imageLogoAlt')"
       />
-      <div>Julius Schultz</div>
+      <div>{{ $t('indexPage.name') }}</div>
     </NuxtLink>
     <div class="tablet-header__menu-options">
       <LanguageSwitcher />
@@ -27,12 +27,16 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'TabletOrDesktopHeader',
   setup() {
-    const links = [
-      { href: '/about', label: 'About' },
-      { href: '/experience', label: 'Experience' },
-      { href: '/projects', label: 'Projects' },
-      { href: '/contact', label: 'Contact' },
-    ]
+    const { t } = useI18n()
+
+    const links = computed(() => {
+      return [
+        { href: '/about', label: t('header.aboutLabel') },
+        { href: '/experience', label: t('header.experienceLabel') },
+        { href: '/projects', label: t('header.projectsLabel') },
+        { href: '/contact', label: t('header.contactLabel') },
+      ]
+    })
 
     return {
       links,

@@ -1,4 +1,11 @@
 {
+  "header": {
+    "imageLogoAlt": "标识",
+    "aboutLabel": "关于我",
+    "experienceLabel": "经验",
+    "projectsLabel": "项目",
+    "contactLabel": "接触"
+  },
   "indexPage": {
     "introduction": "你好，我是",
     "name": "朱利叶斯·舒尔茨",

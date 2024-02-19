@@ -1,4 +1,11 @@
 {
+  "header": {
+    "imageLogoAlt": "Logo",
+    "aboutLabel": "About",
+    "experienceLabel": "Experience",
+    "projectsLabel": "Projects",
+    "contactLabel": "Contact"
+  },
   "indexPage": {
     "introduction": "Hello, I'm",
     "name": "Julius Schultz",

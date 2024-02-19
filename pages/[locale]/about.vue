@@ -14,7 +14,11 @@
         development.
       </p>
     </span>
-    <NuxtImg src="side.jpeg" alt="Profile picture" class="about__pic" />
+    <img
+      src="~/assets/images/side.jpeg"
+      alt="Profile picture"
+      class="about__pic"
+    />
     <div class="about__experience-wrapper">
       <div class="about__experience-container">
         <Icon

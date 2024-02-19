@@ -1,7 +1,11 @@
 <template>
   <nav class="tablet-header">
     <NuxtLink class="tablet-header__logo" to="./">
-      <NuxtImg class="tablet-header__logo-pic" src="Logo.png" alt="Logo" />
+      <img
+        class="tablet-header__logo-pic"
+        src="~/assets/images/Logo.png"
+        alt="Logo"
+      />
       <div>Julius Schultz</div>
     </NuxtLink>
     <div class="tablet-header__menu-options">

@@ -25,7 +25,7 @@
       <div class="projects__unit">
         <img
           class="projects__picture"
-          src="~/assets/images/bloomreach.jpeg"
+          src="../../assets/images/bloomreach.jpeg"
           alt="Julius Schultz profile picture"
         />
         <div class="projects__text">

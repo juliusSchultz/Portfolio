@@ -4,20 +4,20 @@
       <img src="~/assets/images/profile.png" alt="Profile picture" />
     </div>
     <div class="profile__text">
-      <p class="profile__text--p1">👋 Hello, I'm</p>
-      <h1 class="profile__title">Julius Schultz</h1>
-      <p class="profile__text--p2">Frontend Developer</p>
+      <p class="profile__text--p1">👋 {{ $t('indexPage.introduction') }}</p>
+      <h1 class="profile__title">{{ $t('indexPage.name') }}</h1>
+      <p class="profile__text--p2">{{ $t('indexPage.jobTitle') }}</p>
       <div class="profile__btn-container">
         <Button
           to="https://www.diva-e.com/de/"
-          label="Company"
+          :label="$t('indexPage.companyButtonLabel')"
           variant="secondary"
           class="profile__btn"
           icon="apartment"
         />
         <Button
           to="./contact"
-          label="Contact"
+          :label="$t('indexPage.contactButtonLabel')"
           variant="secondary"
           shape="outlined"
           class="profile__btn"

@@ -1,5 +1,12 @@
 {
+  "indexPage": {
+    "introduction": "你好，我是",
+    "name": "朱利叶斯·舒尔茨",
+    "jobTitle": "前端开发人员",
+    "companyButtonLabel": "公司",
+    "contactButtonLabel": "接触"
+  },
   "form": {
-    "firstName": "Vorname"
+    "firstName": "沃纳姆"
   }
 }

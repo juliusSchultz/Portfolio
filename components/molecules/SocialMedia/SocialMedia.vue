@@ -37,7 +37,7 @@ export default defineComponent({
     @apply text-grey-48;
     @apply p-1;
     @apply transition-colors ease-out;
-    @apply tw-block;
+    @apply block;
 
     &:hover {
       @apply text-grey-32;

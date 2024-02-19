@@ -1,5 +1,12 @@
 {
+  "indexPage": {
+    "introduction": "Cześć jestem",
+    "name": "Juliusz Schultz",
+    "jobTitle": "Programista front-end",
+    "companyButtonLabel": "Firma",
+    "contactButtonLabel": "Kontakt"
+  },
   "form": {
-    "firstName": "Vorname"
+    "firstName": "Imię"
   }
 }

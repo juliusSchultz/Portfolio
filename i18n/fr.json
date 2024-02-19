@@ -1,4 +1,11 @@
 {
+  "indexPage": {
+    "introduction": "Bonjour, je suis",
+    "name": "Julius Schultz",
+    "jobTitle": "Développeur Front-End",
+    "companyButtonLabel": "Entreprise",
+    "contactButtonLabel": "Contact"
+  },
   "form": {
     "firstName": "Vorname"
   }

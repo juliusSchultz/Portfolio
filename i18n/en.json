@@ -4,7 +4,8 @@
     "aboutLabel": "About",
     "experienceLabel": "Experience",
     "projectsLabel": "Projects",
-    "contactLabel": "Contact"
+    "contactLabel": "Contact",
+    "languageSwitcherLabel": "Language"
   },
   "indexPage": {
     "introduction": "Hello, I'm",
@@ -46,6 +47,16 @@
     "waterfall": "Waterfall"
   },
   "form": {
-    "firstName": "Englisch"
+    "sectionHeadline1": "Get in Touch",
+    "sectionHeadline2": "Contact Me",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "company": "Company",
+    "mail": "E-Mail",
+    "telephone": "Telephone",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Your message",
+    "submit": "Send",
+    "requiredMessage": "This field is required"
   }
 }

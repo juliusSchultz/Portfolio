@@ -4,7 +4,8 @@
     "aboutLabel": "O mnie",
     "experienceLabel": "Doświadczenie",
     "projectsLabel": "Projektowanie",
-    "contactLabel": "Kontakt"
+    "contactLabel": "Kontakt",
+    "languageSwitcherLabel": "Język"
   },
   "indexPage": {
     "introduction": "Cześć jestem",
@@ -46,6 +47,16 @@
     "waterfall": "Wodospad"
   },
   "form": {
-    "firstName": "Imię"
+    "sectionHeadline1": "Skontaktuj się",
+    "sectionHeadline2": "ze mną",
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
+    "company": "Entreprise",
+    "mail": "E-mail",
+    "telephone": "Telefon",
+    "messageLabel": "Wiadomość",
+    "messagePlaceholder": "Twoja wiadomość",
+    "submit": "Wysłać",
+    "requiredMessage": "To pole jest wymagane"
   }
 }

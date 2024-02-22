@@ -4,7 +4,8 @@
     "aboutLabel": "Über mich",
     "experienceLabel": "Erfahrung",
     "projectsLabel": "Projekte",
-    "contactLabel": "Kontakt"
+    "contactLabel": "Kontakt",
+    "languageSwitcherLabel": "Sprache"
   },
   "indexPage": {
     "introduction": "Hi, ich bin",
@@ -46,6 +47,16 @@
     "waterfall": "Wasserfall"
   },
   "form": {
-    "firstName": "Vorname"
+    "sectionHeadline1": "Nehmen Sie",
+    "sectionHeadline2": "Kontakt auf",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "company": "Firma / Universität",
+    "mail": "E-Mail",
+    "telephone": "Telefon",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Deine Nachricht",
+    "submit": "Absenden",
+    "requiredMessage": "Dieses Feld ist erforderlich"
   }
 }

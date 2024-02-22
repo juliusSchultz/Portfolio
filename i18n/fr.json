@@ -4,7 +4,8 @@
     "aboutLabel": "Sur moi",
     "experienceLabel": "Expérience",
     "projectsLabel": "Projets",
-    "contactLabel": "Contact"
+    "contactLabel": "Contact",
+    "languageSwitcherLabel": "Langue"
   },
   "indexPage": {
     "introduction": "Bonjour, je suis",
@@ -46,6 +47,16 @@
     "waterfall": "Chute d'eau"
   },
   "form": {
-    "firstName": "Vorname"
+    "sectionHeadline1": "Entrer en contact",
+    "sectionHeadline2": "Contactez moi",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "company": "Firma",
+    "mail": "E-mail",
+    "telephone": "Téléphone",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Votre message",
+    "submit": "Envoyer",
+    "requiredMessage": "Ce champ est obligatoire"
   }
 }

@@ -2,7 +2,9 @@
   <div ref="target" class="language-switcher">
     <div class="language-switcher__button" @click="isActive = !isActive">
       <Icon :size="size" icon="language" />
-      <div class="language-switcher__label">Language</div>
+      <div class="language-switcher__label">
+        {{ $t('header.languageSwitcherLabel') }}
+      </div>
     </div>
     <div v-if="isActive" class="language-switcher__content">
       <ul>

@@ -1,6 +1,9 @@
 <template>
   <div class="contact">
-    <SectionHeadline line1="Get in Touch" line2="Contact Me" />
+    <SectionHeadline
+      :line1="$t('form.sectionHeadline1')"
+      :line2="$t('form.sectionHeadline2')"
+    />
     <div class="contact__input-fields">
       <InputField
         v-model="requestData.firstName"
@@ -14,8 +17,8 @@
       />
       <InputField
         v-model="requestData.lastName"
-        label="Last name"
-        placeholder="Last name"
+        :label="$t('form.lastName')"
+        :placeholder="$t('form.lastName')"
         :required="true"
         :rules="{
           required: helpers.withMessage(requiredMessage, required),
@@ -24,26 +27,26 @@
       />
       <InputField
         v-model="requestData.company"
-        label="Company"
-        placeholder="Company"
+        :label="$t('form.company')"
+        :placeholder="$t('form.company')"
         @input="$emit('update', requestData)"
       />
       <InputField
         v-model="requestData.mail"
-        label="E-Mail"
-        placeholder="E-Mail"
+        :label="$t('form.mail')"
+        :placeholder="$t('form.mail')"
         @input="$emit('update', requestData)"
       />
       <InputField
         v-model="requestData.telephone"
-        label="Telephone"
-        placeholder="+49111 1111111"
+        :label="$t('form.telephone')"
+        :placeholder="$t('form.telephone')"
         @input="$emit('update', requestData)"
       />
       <TextArea
         v-model="requestData.message"
-        label="Message"
-        placeholder="Your message"
+        :label="$t('form.messageLabel')"
+        :placeholder="$t('form.messagePlaceholder')"
         :required="true"
         :rules="{
           required: helpers.withMessage(requiredMessage, required),
@@ -51,7 +54,7 @@
         @input="$emit('update', requestData)"
       />
     </div>
-    <Button label="Submit" icon="mail" @click="submit" />
+    <Button :label="$t('form.submit')" icon="mail" @click="submit" />
   </div>
 </template>
 
@@ -60,7 +63,9 @@ import { useContactStore } from '~/stores/contact/contact'
 import { required, helpers } from '@vuelidate/validators'
 import useVuelidate from '@vuelidate/core'
 
-const requiredMessage = 'This field is required'
+const { t } = useI18n()
+
+const requiredMessage = t('form.requiredMessage')
 
 const requestData = ref({
   firstName: '',

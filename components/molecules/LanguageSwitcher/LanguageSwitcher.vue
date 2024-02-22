@@ -47,6 +47,7 @@ onLanguageSwitched('switcher', () => {
 <style>
 .language-switcher {
   @apply self-end;
+  z-index: 100;
 
   &__button {
     @apply flex flex-row;

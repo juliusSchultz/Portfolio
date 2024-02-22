@@ -28,6 +28,23 @@
       "profession": "Frontend Development"
     }
   },
+  "experiencePage": {
+    "sectionHeadline1": "Explorez mon",
+    "sectionHeadline2": "Expérience",
+    "frontendDevelopment": "Développement front-end",
+    "experiencedLevel": "Expérimenté",
+    "intermediateLevel": "Intermédiaire",
+    "nuxt": "Nuxt",
+    "react": "React",
+    "python": "Python",
+    "java": "Java",
+    "swift": "Swift",
+    "scrumMaster": "Maître Scrum",
+    "events": "Événements",
+    "scrumGuide": "Guide Scrum",
+    "kanban": "Kanban",
+    "waterfall": "Chute d'eau"
+  },
   "form": {
     "firstName": "Vorname"
   }

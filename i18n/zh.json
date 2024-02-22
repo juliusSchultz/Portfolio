@@ -28,6 +28,23 @@
       "profession": "Frontend Development"
     }
   },
+  "experiencePage": {
+    "sectionHeadline1": "探索我的",
+    "sectionHeadline2": "经验",
+    "frontendDevelopment": "前端开发",
+    "experiencedLevel": "有经验的",
+    "intermediateLevel": "中间的",
+    "nuxt": "Nuxt",
+    "react": "React",
+    "python": "Python",
+    "java": "爪哇",
+    "swift": "Swift",
+    "scrumMaster": "敏捷大师",
+    "events": "活动",
+    "scrumGuide": "Scrum 指南",
+    "kanban": "Kanban",
+    "waterfall": "瀑布"
+  },
   "form": {
     "firstName": "沃纳姆"
   }

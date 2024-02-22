@@ -1,24 +1,60 @@
 <template>
   <section class="experience">
-    <SectionHeadline line1="Explore My" line2="Experience" />
+    <SectionHeadline
+      :line1="$t('experiencePage.sectionHeadline1')"
+      :line2="$t('experiencePage.sectionHeadline2')"
+    />
     <div class="experience__container-wrapper">
       <div class="experience__details-container">
-        <h2 class="experience__container-title">Frontend Development</h2>
+        <h2 class="experience__container-title">
+          {{ $t('experiencePage.frontendDevelopment') }}
+        </h2>
         <div class="experience__container-skills">
-          <ExperienceEntry skill="Nuxt" level="Experienced" />
-          <ExperienceEntry skill="React" level="Intermediate" />
-          <ExperienceEntry skill="Python" level="Intermediate" />
-          <ExperienceEntry icon="verified" skill="Java" level="Experienced" />
-          <ExperienceEntry icon="verified" skill="Swift" level="Intermediate" />
+          <ExperienceEntry
+            :skill="$t('experiencePage.nuxt')"
+            :level="$t('experiencePage.experiencedLevel')"
+          />
+          <ExperienceEntry
+            :skill="$t('experiencePage.react')"
+            :level="$t('experiencePage.intermediateLevel')"
+          />
+          <ExperienceEntry
+            :skill="$t('experiencePage.python')"
+            :level="$t('experiencePage.intermediateLevel')"
+          />
+          <ExperienceEntry
+            icon="verified"
+            :skill="$t('experiencePage.java')"
+            :level="$t('experiencePage.experiencedLevel')"
+          />
+          <ExperienceEntry
+            icon="verified"
+            :skill="$t('experiencePage.swift')"
+            :level="$t('experiencePage.intermediateLevel')"
+          />
         </div>
       </div>
       <div class="experience__details-container">
-        <h2 class="experience__container-title">Scrum Master</h2>
+        <h2 class="experience__container-title">
+          {{ $t('experiencePage.scrumMaster') }}
+        </h2>
         <div class="experience__container-skills">
-          <ExperienceEntry skill="Events" level="Experienced" />
-          <ExperienceEntry skill="Scrum Guide" level="Experienced" />
-          <ExperienceEntry skill="Kanban" level="Intermediate" />
-          <ExperienceEntry skill="Waterfall" level="Intermediate" />
+          <ExperienceEntry
+            :skill="$t('experiencePage.events')"
+            :level="$t('experiencePage.experiencedLevel')"
+          />
+          <ExperienceEntry
+            :skill="$t('experiencePage.scrumGuide')"
+            :level="$t('experiencePage.experiencedLevel')"
+          />
+          <ExperienceEntry
+            :skill="$t('experiencePage.kanban')"
+            :level="$t('experiencePage.intermediateLevel')"
+          />
+          <ExperienceEntry
+            :skill="$t('experiencePage.waterfall')"
+            :level="$t('experiencePage.intermediateLevel')"
+          />
         </div>
       </div>
     </div>
@@ -27,7 +63,7 @@
 
 <style>
 .experience {
-  position: relative;
+  @apply relative;
 
   &__container-wrapper {
     @apply gap-y-9;

@@ -1,5 +1,7 @@
 import { availableLocales } from './i18n.config'
 
+const baseURL = process.env.BASE_URL || 'http://localhost:3000'
+
 const languageCodes = (process.env.LANGUAGE_CODES || 'en').split(',')
 
 export const locales = availableLocales.filter((local: any) =>
@@ -39,12 +41,18 @@ export default defineNuxtConfig({
   },
 
   vueEmail: {
-    // baseUrl: 'https://vue-email-demo.vercel.app/',
+    // baseUrl: 'https://juliusschultz.com/',
     autoImport: true,
   },
 
   image: {
     dir: 'assets/images',
+  },
+
+  runtimeConfig: {
+    public: {
+      baseURL: baseURL,
+    },
   },
 
   ssr: true,

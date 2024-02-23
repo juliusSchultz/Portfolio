@@ -59,9 +59,9 @@
 </template>
 
 <script setup lang="ts">
-import { useContactStore } from '~/stores/contact/contact'
 import { required, helpers } from '@vuelidate/validators'
 import useVuelidate from '@vuelidate/core'
+import { useMailSender } from '~/composables/useMailSender'
 
 const { t } = useI18n()
 
@@ -76,8 +76,7 @@ const requestData = ref({
   message: '',
 })
 
-const contactStore = useContactStore()
-const { sendMail } = contactStore
+const mailSender = useMailSender()
 const v = useVuelidate()
 
 const formHasNoErrors = computed(() => {
@@ -87,7 +86,7 @@ const formHasNoErrors = computed(() => {
 
 const submit = async () => {
   if (formHasNoErrors.value) {
-    await sendMail(requestData.value)
+    await mailSender.sendMail(requestData.value)
   }
 }
 </script>

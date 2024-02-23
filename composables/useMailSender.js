@@ -4,6 +4,7 @@ export const useMailSender = () => {
   const sendMail = async (requestData) => {
     await useFetch('api/send-email', {
       baseURL: config.public.baseURL,
+      mode: 'no-cors',
       method: 'POST',
       body: requestData,
     })

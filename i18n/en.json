@@ -46,7 +46,10 @@
     "kanban": "Kanban",
     "waterfall": "Waterfall"
   },
-  "projectsPage": {},
+  "projectsPage": {
+    "sectionHeadline1": "Browse My Recent",
+    "sectionHeadline2": "Projects"
+  },
   "form": {
     "sectionHeadline1": "Get in Touch",
     "sectionHeadline2": "Contact Me",

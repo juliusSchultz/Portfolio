@@ -14,7 +14,7 @@ const recipients = [
 ]
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event)
+  const body = JSON.parse(await readBody(event))
 
   const template = await useCompiler('NormalTemplate.vue', {
     props: {

@@ -47,12 +47,12 @@ export default defineComponent({
       menuOpen.value = !menuOpen.value
     }
 
-    const links = [
+    const links = computed(() => [
       { href: '/about', label: t('header.aboutLabel') },
       { href: '/experience', label: t('header.experienceLabel') },
       { href: '/projects', label: t('header.projectsLabel') },
       { href: '/contact', label: t('header.contactLabel') },
-    ]
+    ])
 
     return {
       //state

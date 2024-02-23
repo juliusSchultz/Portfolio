@@ -20,7 +20,7 @@ export default defineEventHandler(async (event) => {
     props: {
       firstName: body?.firstName || '',
       lastName: body?.lastName || '',
-      company: body?.company || '',
+      company: body?.company || '-',
       mail: body?.mail || '-',
       telephone: body?.telephone || '-',
       message: body?.message || '',
@@ -30,7 +30,7 @@ export default defineEventHandler(async (event) => {
   const options = new EmailParams()
     .setFrom(sentFrom)
     .setTo(recipients)
-    .setSubject('This is a Subject')
+    .setSubject(body?.subject)
     .setHtml(template.html)
 
   await mailerSend.email.send(options)

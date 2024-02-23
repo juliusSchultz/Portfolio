@@ -57,6 +57,7 @@
     "telephone": "Téléphone",
     "messageLabel": "Message",
     "messagePlaceholder": "Votre message",
+    "subject": "Sujet",
     "submit": "Envoyer",
     "requiredMessage": "Ce champ est obligatoire"
   }

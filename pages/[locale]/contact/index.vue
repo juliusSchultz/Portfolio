@@ -43,6 +43,16 @@
         :placeholder="$t('form.telephone')"
         @input="$emit('update', requestData)"
       />
+      <InputField
+        v-model="requestData.subject"
+        :label="$t('form.subject')"
+        :placeholder="$t('form.subject')"
+        :required="true"
+        :rules="{
+          required: helpers.withMessage(requiredMessage, required),
+        }"
+        @input="$emit('update', requestData)"
+      />
       <TextArea
         v-model="requestData.message"
         :label="$t('form.messageLabel')"
@@ -73,6 +83,7 @@ const requestData = ref({
   company: '',
   mail: '',
   telephone: '',
+  subject: '',
   message: '',
 })
 

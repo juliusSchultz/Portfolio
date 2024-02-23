@@ -60,6 +60,7 @@
     "telephone": "Telephone",
     "messageLabel": "Message",
     "messagePlaceholder": "Your message",
+    "subject": "Subject",
     "submit": "Send",
     "requiredMessage": "This field is required"
   }

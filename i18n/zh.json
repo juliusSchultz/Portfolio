@@ -57,6 +57,7 @@
     "telephone": "电话",
     "messageLabel": "信息",
     "messagePlaceholder": "您的留言",
+    "subject": "主题",
     "submit": "发送",
     "requiredMessage": "此字段是必需的"
   }

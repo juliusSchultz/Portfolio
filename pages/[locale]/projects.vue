@@ -1,22 +1,26 @@
 <template>
   <section class="projects">
-    <SectionHeadline line1="Browse My Recent" line2="Projects" />
+    <SectionHeadline
+      :line1="$t('projectsPage.sectionHeadline1')"
+      :line2="$t('projectsPage.sectionHeadline2')"
+    />
     <div class="projects__wrapper">
       <div class="projects__unit">
         <img
           class="projects__picture"
           src="~/assets/images/pfeiffer-logo.jpeg"
-          alt="Julius Schultz profile picture"
+          :alt="$t('projectsPage.project1.altPicture')"
         />
         <div class="projects__text">
-          <h3 class="projects__project-headline">Pfeiffer Vacuum</h3>
+          <h3 class="projects__project-headline">
+            {{ $t('projectsPage.project1.title') }}
+          </h3>
           <p class="projects__project-description">
-            Development of an online shop at diva-e on behalf of Pfeiffer Vacuum
+            {{ $t('projectsPage.project1.description') }}
           </p>
           <Button
-            class="btn btn-color-2"
-            to="https://webportal.pfeiffer-vacuum.com/global/de"
-            label="Website"
+            :to="`https://webportal.pfeiffer-vacuum.com/global/${locale}`"
+            :label="$t('projectsPage.project1.buttonLabel')"
             variant="secondary"
             icon="arrow_forward"
           />
@@ -26,16 +30,18 @@
         <img
           class="projects__picture"
           src="../../assets/images/bloomreach.jpeg"
-          alt="Julius Schultz profile picture"
+          :alt="$t('projectsPage.project2.altPicture')"
         />
         <div class="projects__text">
-          <h3 class="projects__project-headline">Bloomreach Connector</h3>
+          <h3 class="projects__project-headline">
+            {{ $t('projectsPage.project2.title') }}
+          </h3>
           <p class="projects__project-description">
-            Creation of a reusable Connector for Nuxt.js projects
+            {{ $t('projectsPage.project2.description') }}
           </p>
           <Button
             to="https://www.npmjs.com/package/bloomreach-with-nuxt"
-            label="npm package"
+            :label="$t('projectsPage.project2.buttonLabel')"
             variant="secondary"
             shape="outlined"
             icon="arrow_forward"
@@ -46,7 +52,9 @@
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { locale } = useI18n()
+</script>
 
 <style>
 .projects {

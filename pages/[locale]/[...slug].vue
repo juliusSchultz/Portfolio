@@ -9,7 +9,7 @@
       <p class="profile__text--p2">{{ $t('indexPage.jobTitle') }}</p>
       <div class="profile__btn-container">
         <Button
-          to="https://www.diva-e.com/de/"
+          :to="`https://www.diva-e.com/${locale}/`"
           :label="$t('indexPage.companyButtonLabel')"
           variant="secondary"
           class="profile__btn"
@@ -27,6 +27,10 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const { locale } = useI18n()
+</script>
 
 <style>
 .profile {

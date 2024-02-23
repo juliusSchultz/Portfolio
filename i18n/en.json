@@ -48,7 +48,19 @@
   },
   "projectsPage": {
     "sectionHeadline1": "Browse My Recent",
-    "sectionHeadline2": "Projects"
+    "sectionHeadline2": "Projects",
+    "project1": {
+      "altPicture": "Pfeiffer Vacuum Logo",
+      "title": "Pfeiffer Vacuum",
+      "description": "Development of an online shop at diva-e on behalf of Pfeiffer Vacuum",
+      "buttonLabel": "Website"
+    },
+    "project2": {
+      "altPicture": "Bloomreach Logo",
+      "title": "Bloomreach Connector",
+      "description": "Creation of a reusable Connector for Nuxt.js projects",
+      "buttonLabel": "npm package"
+    }
   },
   "form": {
     "sectionHeadline1": "Get in Touch",

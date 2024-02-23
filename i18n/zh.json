@@ -46,7 +46,22 @@
     "kanban": "Kanban",
     "waterfall": "瀑布"
   },
-  "projectsPage": {},
+  "projectsPage": {
+    "sectionHeadline1": "浏览我最近的",
+    "sectionHeadline2": "项目",
+    "project1": {
+      "altPicture": "Pfeiffer Vacuum 标识",
+      "title": "Pfeiffer Vacuum",
+      "description": "代表Pfeiffer Vacuum在 diva-e 开发在线商店",
+      "buttonLabel": "网站"
+    },
+    "project2": {
+      "altPicture": "Bloomreach 标识",
+      "title": "Bloomreach 连接器",
+      "description": "为 Nuxt.js 项目创建可重用连接器",
+      "buttonLabel": "npm 包"
+    }
+  },
   "form": {
     "sectionHeadline1": "保持联系",
     "sectionHeadline2": "联络我",

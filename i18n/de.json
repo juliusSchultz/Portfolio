@@ -46,7 +46,22 @@
     "kanban": "Kanban",
     "waterfall": "Wasserfall"
   },
-  "projectsPage": {},
+  "projectsPage": {
+    "sectionHeadline1": "Werfen Sie einen Blick auf meine neuesten",
+    "sectionHeadline2": "Projekte",
+    "project1": {
+      "altPicture": "Pfeiffer Vacuum Logo",
+      "title": "Pfeiffer Vacuum",
+      "description": "Entwicklung eines Onlineshops bei diva-e im Auftrag von Pfeiffer Vacuum",
+      "buttonLabel": "Webseite"
+    },
+    "project2": {
+      "altPicture": "Bloomreach Logo",
+      "title": "Bloomreach Konnektor",
+      "description": "Erstellung eines wiederverwendbaren Konnektors für Nuxt.js-Projekte",
+      "buttonLabel": "npm-Paket"
+    }
+  },
   "form": {
     "sectionHeadline1": "Nehmen Sie",
     "sectionHeadline2": "Kontakt auf",

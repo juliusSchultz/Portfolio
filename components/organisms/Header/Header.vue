@@ -5,8 +5,6 @@
   </header>
 </template>
 
-<script></script>
-
 <style>
 .header {
   &__mobile {

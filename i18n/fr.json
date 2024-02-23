@@ -46,6 +46,7 @@
     "kanban": "Kanban",
     "waterfall": "Chute d'eau"
   },
+  "projectsPage": {},
   "form": {
     "sectionHeadline1": "Entrer en contact",
     "sectionHeadline2": "Contactez moi",

@@ -1,6 +1,9 @@
 <template>
   <section class="about">
-    <SectionHeadline line1="Get To Know More" line2="About Me" />
+    <SectionHeadline
+      :line1="$t('aboutPage.sectionHeadline1')"
+      :line2="$t('aboutPage.sectionHeadline2')"
+    />
     <span class="about__text">
       <p>
         {{ $t('aboutPage.introduction1') }}

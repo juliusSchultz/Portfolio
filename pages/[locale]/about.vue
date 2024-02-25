@@ -90,9 +90,14 @@
     @apply h-full;
     @apply flex;
     @apply items-center;
-    padding: 46px;
+    @apply px-[46px];
+    @apply py-[56px];
     @apply bg-blue;
     @apply rounded-l-2xl;
+
+    @screen lg {
+      @apply py-[50px];
+    }
   }
 
   &__experience-text {

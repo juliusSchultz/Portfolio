@@ -87,6 +87,9 @@
   }
 
   &__experience-icon {
+    @apply h-full;
+    @apply flex;
+    @apply items-center;
     padding: 46px;
     @apply bg-blue;
     @apply rounded-l-2xl;

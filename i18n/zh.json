@@ -15,18 +15,18 @@
     "contactButtonLabel": "接触"
   },
   "aboutPage": {
-    "introduction1" : "“Use your own understanding and don’t fail because of laziness or cowardice,” this guiding principle of the Age of Enlightenment has shaped me and drives me to constantly expand my horizons of knowledge.",
-    "introduction2" : "In order to dive deeper into new technologies and especially software development, I decided to study international media computing. Currently, topics that interest me quite a lot are artificial intelligence and web development.",
-    "profilePictureAlt": "Profile picture",
+    "introduction1" : "“用自己的悟性，不要因为懒惰或怯懦而失败”，这条启蒙时代的指导思想塑造了我，也驱使我不断拓展自己的知识视野。",
+    "introduction2" : "为了更深入地研究新技术，特别是软件开发，我决定学习国际媒体计算。目前，我非常感兴趣的主题是人工智能和网络开发。",
+    "profilePictureAlt": "个人资料图片",
     "education": {
-      "label": "Education",
-      "bachelor": "B.Sc. Bachelors Degree",
-      "university": "University of Applied Sciences Berlin"
+      "label": "教育",
+      "bachelor": "理学学士学士学位",
+      "university": "柏林应用科技大学"
     },
     "workExperience": {
-      "label": "Work Experience",
-      "time": "2+ years",
-      "profession": "Frontend Development"
+      "label": "工作经验",
+      "time": "2年以上",
+      "profession": "前端开发"
     }
   },
   "experiencePage": {

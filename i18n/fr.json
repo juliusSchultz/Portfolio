@@ -15,25 +15,25 @@
     "contactButtonLabel": "Contact"
   },
   "aboutPage": {
-    "introduction1" : "“Use your own understanding and don’t fail because of laziness or cowardice,” this guiding principle of the Age of Enlightenment has shaped me and drives me to constantly expand my horizons of knowledge.",
-    "introduction2" : "In order to dive deeper into new technologies and especially software development, I decided to study international media computing. Currently, topics that interest me quite a lot are artificial intelligence and web development.",
-    "profilePictureAlt": "Profile picture",
+    "introduction1" : "« Utilisez votre propre esprit et n'échouez pas à cause de la paresse ou de la lâcheté », ce principe directeur des Lumières m'a influencé et me pousse à élargir constamment mes horizons de connaissances.",
+    "introduction2" : "Afin d'approfondir les nouvelles technologies et notamment le développement de logiciels, j'ai décidé d'étudier l'informatique multimédia internationale. Actuellement, les sujets qui m'intéressent beaucoup sont l'intelligence artificielle et le développement web.",
+    "profilePictureAlt": "Image de profil",
     "education": {
-      "label": "Education",
-      "bachelor": "B.Sc. Bachelors Degree",
-      "university": "University of Applied Sciences Berlin"
+      "label": "Éducation",
+      "bachelor": "B.Sc. Licence",
+      "university": "Université des Sciences Appliquées de Berlin"
     },
     "workExperience": {
-      "label": "Work Experience",
-      "time": "2+ years",
-      "profession": "Frontend Development"
+      "label": "L'expérience professionnelle",
+      "time": "2+ ans",
+      "profession": "Développement front-end"
     }
   },
   "experiencePage": {
     "sectionHeadline1": "Explorez mon",
     "sectionHeadline2": "Expérience",
     "frontendDevelopment": "Développement front-end",
-    "experiencedLevel": "Expérimenté",
+    "experiencedLevel": "Professionnel",
     "intermediateLevel": "Intermédiaire",
     "nuxt": "Nuxt",
     "react": "React",
@@ -67,7 +67,7 @@
     "sectionHeadline2": "Contactez moi",
     "firstName": "Prénom",
     "lastName": "Nom de famille",
-    "company": "Firma",
+    "company": "Entreprise",
     "mail": "E-mail",
     "telephone": "Téléphone",
     "messageLabel": "Message",

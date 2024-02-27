@@ -9,7 +9,7 @@
 <script setup>
 const config = useRuntimeConfig()
 useHead({
-  title: 'Julius Schultz -Web Development',
+  title: 'Julius Schultz - Web Development',
   meta: [
     { charset: 'utf-8' },
     {

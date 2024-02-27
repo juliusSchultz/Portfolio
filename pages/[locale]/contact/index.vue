@@ -72,11 +72,6 @@
 import { required, helpers } from '@vuelidate/validators'
 import useVuelidate from '@vuelidate/core'
 import { useMailSender } from '~/composables/useMailSender'
-
-definePageMeta({
-  title: 'Julius Schultz - Contact Page',
-})
-
 useSeoMeta({
   title: 'Julius Schultz - Contact Page',
   description:

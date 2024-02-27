@@ -53,10 +53,6 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  title: 'Julius Schultz - About Page',
-})
-
 useSeoMeta({
   title: 'Julius Schultz - About Page',
   description:

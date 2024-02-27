@@ -27,15 +27,4 @@ useHead({
     },
   ],
 })
-
-useSeoMeta({
-  title: 'Julius Schultz - Web Development',
-  ogTitle: 'Julius Schultz - Web Development',
-  description:
-    'This is the website of the software developer Julius Schultz. Go check it out!',
-  ogDescription:
-    'This is the website of the software developer Julius Schultz. Go check it out!',
-  ogImage: 'https://www.juliusschultz.com/_nuxt/profile.BipV7A1d.png',
-  twitterCard: 'summary_large_image',
-})
 </script>

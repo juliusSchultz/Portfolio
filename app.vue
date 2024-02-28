@@ -16,7 +16,7 @@ const i18nHead = useLocaleHead({
 const { $i18n } = useNuxtApp()
 
 useHead({
-  title: 'Julius Schultz - Web Development',
+  title: 'Julius Schultz - Web Developer',
   htmlAttrs: {
     lang: $i18n.locale,
   },
@@ -30,7 +30,7 @@ useHead({
       hid: 'description',
       name: 'description',
       content:
-        'This is the website of the software developer Julius Schultz. Go check it out!',
+        'This is the website of the software developer Julius Schultz. You will find information about his experience, projects, skills, and more. Go check it out!',
     },
     ...(i18nHead.value.meta || []),
   ],

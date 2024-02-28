@@ -16,7 +16,12 @@ useHead({
       name: 'viewport',
       content: 'width=device-width, initial-scale=1, maximum-scale=1',
     },
-    { hid: 'description', name: 'description', content: '' },
+    {
+      hid: 'description',
+      name: 'description',
+      content:
+        'This is the website of the software developer Julius Schultz. Go check it out!',
+    },
   ],
   link: [
     {

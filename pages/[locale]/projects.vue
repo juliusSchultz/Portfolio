@@ -53,16 +53,6 @@
 </template>
 
 <script setup lang="ts">
-useSeoMeta({
-  title: 'Julius Schultz - Projects Page',
-  description:
-    'This is the projects page of the software developer Julius Schultz. You will find here all recent projects of Julius Schultz.',
-  ogDescription:
-    'This is the projects page of the software developer Julius Schultz. You will find here all recent projects of Julius Schultz.',
-  ogImage: 'https://www.juliusschultz.com/_nuxt/profile.BipV7A1d.png',
-  twitterCard: 'summary_large_image',
-})
-
 const { locale } = useI18n()
 </script>
 

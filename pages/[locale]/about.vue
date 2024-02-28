@@ -51,18 +51,6 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-useSeoMeta({
-  title: 'Julius Schultz - About Page',
-  description:
-    'This is the about page of the software developer Julius Schultz. Go check it out!',
-  ogDescription:
-    'This is the about page of the software developer Julius Schultz. Go check it out!',
-  ogImage: 'https://www.juliusschultz.com/_nuxt/profile.BipV7A1d.png',
-  twitterCard: 'summary_large_image',
-})
-</script>
 <style>
 .about {
   @apply flex flex-col;

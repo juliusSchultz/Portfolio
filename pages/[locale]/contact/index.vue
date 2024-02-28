@@ -72,16 +72,6 @@
 import { required, helpers } from '@vuelidate/validators'
 import useVuelidate from '@vuelidate/core'
 import { useMailSender } from '~/composables/useMailSender'
-useSeoMeta({
-  title: 'Julius Schultz - Contact Page',
-  description:
-    'This is the contact page of the software developer Julius Schultz. You can leave him a message using the form.',
-  ogDescription:
-    'This is the contact page of the software developer Julius Schultz. You can leave him a message using the form.',
-  ogImage: 'https://www.juliusschultz.com/_nuxt/profile.BipV7A1d.png',
-  twitterCard: 'summary_large_image',
-})
-
 const { t } = useI18n()
 
 const requiredMessage = t('form.requiredMessage')

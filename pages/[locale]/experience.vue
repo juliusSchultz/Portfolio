@@ -61,18 +61,6 @@
   </section>
 </template>
 
-<script setup lang="ts">
-useSeoMeta({
-  title: 'Julius Schultz - Experience Page',
-  description:
-    'This is the experience page of the software developer Julius Schultz. Listed are all of his skills!',
-  ogDescription:
-    'This is the experience page of the software developer Julius Schultz. Listed are all of his skills!',
-  ogImage: 'https://www.juliusschultz.com/_nuxt/profile.BipV7A1d.png',
-  twitterCard: 'summary_large_image',
-})
-</script>
-
 <style>
 .experience {
   @apply relative;

@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="to" target="_blank">
+  <NuxtLink :to="to" target="_blank" rel="external">
     <Icon class="social-media__icon" v-bind="{ icon, title }" type="svg" />
   </NuxtLink>
 </template>

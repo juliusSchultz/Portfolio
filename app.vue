@@ -7,9 +7,19 @@
 </template>
 
 <script setup>
-const config = useRuntimeConfig()
+const i18nHead = useLocaleHead({
+  addSeoAttributes: {
+    canonicalQueries: ['foo'],
+  },
+})
+
+const { $i18n } = useNuxtApp()
+
 useHead({
   title: 'Julius Schultz - Web Development',
+  htmlAttrs: {
+    lang: $i18n.locale,
+  },
   meta: [
     { charset: 'utf-8' },
     {
@@ -22,6 +32,7 @@ useHead({
       content:
         'This is the website of the software developer Julius Schultz. Go check it out!',
     },
+    ...(i18nHead.value.meta || []),
   ],
   link: [
     {
@@ -30,6 +41,7 @@ useHead({
       sizes: '16x16',
       href: '/favicon.ico',
     },
+    ...(i18nHead.value.link || []),
   ],
 })
 </script>

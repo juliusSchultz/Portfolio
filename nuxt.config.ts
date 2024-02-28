@@ -29,6 +29,7 @@ export default defineNuxtConfig({
   ],
 
   i18n: {
+    baseUrl: baseURL,
     defaultLocale: process.env.DEFAULT_LANGUAGE_CODE,
     locales,
     strategy: 'no_prefix',

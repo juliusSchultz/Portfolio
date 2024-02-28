@@ -76,6 +76,13 @@
     "messagePlaceholder": "Twoja wiadomość",
     "subject": "Temat",
     "submit": "Wysłać",
-    "requiredMessage": "To pole jest wymagane"
+    "requiredMessage": "To pole jest wymagane",
+    "success": {
+      "sectionHeadline1": "Twoja prośba została",
+      "sectionHeadline2": "Zrealizowana",
+      "successMessage1": "Pomyślnie dostarczyłeś wiadomość.",
+      "successMessage2": "Wkrótce otrzymasz odpowiedź.",
+      "button": "Powrót do strony głównej"
+    }
   }
 }

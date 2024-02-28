@@ -1,6 +1,6 @@
 <template>
   <nav class="mobile-header">
-    <NuxtLink class="mobile-header__logo" to="./">
+    <NuxtLink class="mobile-header__logo" to="/">
       <img
         class="mobile-header__logo-pic"
         src="~/assets/images/Logo.png"
@@ -120,7 +120,6 @@ export default defineComponent({
       width: 100%;
       height: 2.5px;
       @apply bg-grey-32;
-      transition: all 0.3 ease-in-out;
     }
   }
 

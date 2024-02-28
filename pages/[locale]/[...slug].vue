@@ -16,7 +16,7 @@
           icon="apartment"
         />
         <Button
-          to="./contact"
+          to="/contact"
           :label="$t('indexPage.contactButtonLabel')"
           variant="secondary"
           shape="outlined"

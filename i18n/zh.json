@@ -76,6 +76,13 @@
     "messagePlaceholder": "您的留言",
     "subject": "主题",
     "submit": "发送",
-    "requiredMessage": "此字段是必需的"
+    "requiredMessage": "此字段是必需的",
+    "success": {
+      "sectionHeadline1": "您的要求是",
+      "sectionHeadline2": "成功的",
+      "successMessage1": "您已成功发送消息。您很快就会收到答复。",
+      "successMessage2": "",
+      "button": "返回首页"
+    }
   }
 }

@@ -76,6 +76,13 @@
     "messagePlaceholder": "Your message",
     "subject": "Subject",
     "submit": "Send",
-    "requiredMessage": "This field is required"
+    "requiredMessage": "This field is required",
+    "success": {
+      "sectionHeadline1": "Your request was",
+      "sectionHeadline2": "Successful",
+      "successMessage1": "You have successfully sent a request.",
+      "successMessage2": "The host will get in touch with you as soon as possible.",
+      "button": "Retour à la page d'accueil"
+    }
   }
 }

@@ -13,7 +13,6 @@
         :rules="{
           required: helpers.withMessage(requiredMessage, required),
         }"
-        @input="$emit('update', requestData)"
       />
       <InputField
         v-model="requestData.lastName"
@@ -23,25 +22,21 @@
         :rules="{
           required: helpers.withMessage(requiredMessage, required),
         }"
-        @input="$emit('update', requestData)"
       />
       <InputField
         v-model="requestData.company"
         :label="$t('form.company')"
         :placeholder="$t('form.company')"
-        @input="$emit('update', requestData)"
       />
       <InputField
         v-model="requestData.mail"
         :label="$t('form.mail')"
         :placeholder="$t('form.mail')"
-        @input="$emit('update', requestData)"
       />
       <InputField
         v-model="requestData.telephone"
         :label="$t('form.telephone')"
         :placeholder="$t('form.telephone')"
-        @input="$emit('update', requestData)"
       />
       <InputField
         v-model="requestData.subject"
@@ -51,7 +46,6 @@
         :rules="{
           required: helpers.withMessage(requiredMessage, required),
         }"
-        @input="$emit('update', requestData)"
       />
       <TextArea
         v-model="requestData.message"
@@ -61,7 +55,6 @@
         :rules="{
           required: helpers.withMessage(requiredMessage, required),
         }"
-        @input="$emit('update', requestData)"
       />
     </div>
     <Button :label="$t('form.submit')" icon="mail" @click="submit" />
@@ -97,6 +90,7 @@ const formHasNoErrors = computed(() => {
 const submit = async () => {
   if (formHasNoErrors.value) {
     await mailSender.sendMail(requestData.value)
+    await navigateTo('/contact/success')
   }
 }
 </script>

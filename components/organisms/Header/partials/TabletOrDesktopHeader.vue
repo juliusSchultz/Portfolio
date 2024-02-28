@@ -1,6 +1,6 @@
 <template>
   <nav class="tablet-header">
-    <NuxtLink class="tablet-header__logo" to="./">
+    <NuxtLink class="tablet-header__logo" to="/">
       <img
         class="tablet-header__logo-pic"
         src="~/assets/images/Logo.png"

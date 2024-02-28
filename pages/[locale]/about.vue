@@ -4,14 +4,12 @@
       :line1="$t('aboutPage.sectionHeadline1')"
       :line2="$t('aboutPage.sectionHeadline2')"
     />
-    <span class="about__text">
-      <p>
-        {{ $t('aboutPage.introduction1') }}
-        <br />
-        <br />
-        {{ $t('aboutPage.introduction2') }}
-      </p>
-    </span>
+    <p class="about__text">
+      {{ $t('aboutPage.introduction1') }}
+      <br />
+      <br />
+      {{ $t('aboutPage.introduction2') }}
+    </p>
     <img
       src="~/assets/images/side.jpeg"
       :alt="$t('aboutPage.profilePictureAlt')"
@@ -51,6 +49,7 @@
     </div>
   </section>
 </template>
+
 <style>
 .about {
   @apply flex flex-col;

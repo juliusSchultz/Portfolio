@@ -76,6 +76,13 @@
     "messagePlaceholder": "Votre message",
     "subject": "Sujet",
     "submit": "Envoyer",
-    "requiredMessage": "Ce champ est obligatoire"
+    "requiredMessage": "Ce champ est obligatoire",
+    "success": {
+      "sectionHeadline1": "Votre demande a ",
+      "sectionHeadline2": "Abouti",
+      "successMessage1": "Vous avez envoyé une demande avec succès",
+      "successMessage2": "L'hôte vous contactera dans les plus brefs délais.",
+      "button": "Zurück zur Home Page"
+    }
   }
 }

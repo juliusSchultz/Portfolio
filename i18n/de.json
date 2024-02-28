@@ -76,6 +76,13 @@
     "messagePlaceholder": "Deine Nachricht",
     "subject": "Betreff",
     "submit": "Absenden",
-    "requiredMessage": "Dieses Feld ist erforderlich"
+    "requiredMessage": "Dieses Feld ist erforderlich",
+    "success": {
+      "sectionHeadline1": "Ihre Anfrage war",
+      "sectionHeadline2": "Erfolgreich",
+      "successMessage1": "Sie haben erfolgreich eine Nachricht übermittelt.",
+      "successMessage2": "In Kürze werden Sie eine Antwort erhalten.",
+      "button": "Zurück zur Home Page"
+    }
   }
 }

@@ -86,27 +86,27 @@
     }
   },
   "imprint": {
-    "sectionHeadline2": "Impressum",
+    "sectionHeadline2": "Imprimer",
     "address": {
-      "headline": "Angaben gemäß § 5 TMG:",
+      "headline": "Conformément au § 5 TMG :",
       "name": "Julius Schultz",
       "town": "Berlin",
-      "contactLink": "Kontakt"
+      "contactLink": "Contact"
     },
     "section1": {
-      "headline": "Haftungsausschluss – Disclaimer:"
+      "headline": "Avis de non-responsabilité:"
     },
     "section2": {
-      "headline": "Haftung für Inhalte",
-      "text": "Die Inhalte unserer Webseite wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen."
+      "headline": "Responsabilité du contenu",
+      "text": "Le contenu de mon site Internet a été créé avec le plus grand soin possible. Cependant, je ne peux garantir que le contenu soit correct, complet ou à jour. En tant que prestataire de services, je suis responsable de mon propre contenu sur ces pages conformément aux lois générales conformément à l'article 7, paragraphe 1, du TMG. Toutefois, conformément aux articles 8 à 10 du TMG, en tant que prestataire de services, je ne suis pas obligé de surveiller les informations de tiers transmises ou stockées ni d'enquêter sur les circonstances indiquant une activité illégale. Les obligations de supprimer ou de bloquer l'utilisation des informations conformément au droit général restent inchangées. Toutefois, la responsabilité à cet égard n'est possible qu'à partir du moment où l'on a connaissance d'une violation concrète de la loi. Si nous avons connaissance de violations légales correspondantes, nous supprimerons immédiatement ce contenu."
     },
     "section3":  {
-      "headline": "Haftungsbeschränkung für externe Links",
-      "text": "Unsere Webseite enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Daher können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen."
+      "headline": "Limitation de responsabilité pour les liens externes",
+      "text": "Mon site Web contient des liens vers des sites Web externes de tiers sur le contenu desquels je n'ai aucune influence. Par conséquent, je ne peux accepter aucune responsabilité pour ce contenu externe. Le fournisseur ou l'exploitant respectif des pages est toujours responsable du contenu des pages liées. Les pages liées ont été vérifiées au moment de la création du lien pour détecter d'éventuelles violations de la loi. Aucun contenu illégal n'était apparent au moment de la création du lien. Un contrôle permanent du contenu des pages liées n'est toutefois pas raisonnable sans preuves concrètes d'une violation de la loi. Si nous avons connaissance de violations de la loi, nous supprimerons immédiatement ces liens."
     },
     "section4":  {
-      "headline": "Urheberrecht",
-      "text": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
+      "headline": "Droits d'auteur",
+      "text": "Le contenu et les œuvres de ces pages créées par les exploitants du site sont soumis à la loi allemande sur le droit d'auteur. La reproduction, le traitement, la distribution et toute forme d'exploitation en dehors des limites du droit d'auteur nécessitent l'accord écrit de l'auteur ou du créateur respectif. Les téléchargements et les copies de cette page ne sont autorisés que pour un usage privé et non commercial. Si le contenu de ce site n'a pas été créé par l'opérateur, les droits d'auteur des tiers sont respectés. En particulier, les contenus de tiers sont marqués comme tels. Si vous constatez néanmoins une violation du droit d'auteur, n'hésitez pas à m'en informer. Si j'ai connaissance d'une violation de la loi, je supprimerai immédiatement ce contenu."
     }
   }
 }

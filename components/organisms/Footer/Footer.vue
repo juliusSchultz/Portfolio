@@ -28,10 +28,10 @@ export default defineComponent({
   name: 'Footer',
   setup() {
     const links = [
-      { href: '/about', label: 'About' },
       { href: '/experience', label: 'Experience' },
       { href: '/projects', label: 'Projects' },
       { href: '/contact', label: 'Contact' },
+      { href: '/imprint', label: 'Imprint' },
     ]
 
     const socialMedia = [
@@ -66,6 +66,7 @@ export default defineComponent({
 
   &__grey {
     @apply bg-grey-16;
+    background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149158069.jpg?t=st=1709567989~exp=1709571589~hmac=03ecb6c3f29187d8c04fcb3e1fbeb18f62b512c8438edef2c47ba720dd898268&w=740');
     color: white;
   }
 
@@ -89,11 +90,13 @@ export default defineComponent({
   &__link {
     text-decoration: none;
     text-decoration-color: white;
-    @apply font-sans;
+    @apply text-base;
+    @apply leading-7;
+    @apply font-thin;
   }
 
   &__link:hover {
-    color: grey;
+    @apply text-grey-64;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
     text-decoration-color: rgb(181, 181, 181);

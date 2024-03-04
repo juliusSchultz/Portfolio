@@ -118,7 +118,7 @@ export default defineComponent({
 
     span {
       width: 100%;
-      height: 2.5px;
+      height: 4px;
       @apply bg-grey-32;
     }
   }

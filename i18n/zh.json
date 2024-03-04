@@ -7,6 +7,10 @@
     "contactLabel": "接触",
     "languageSwitcherLabel": "语言"
   },
+  "footer": {
+    "copyright1": "Copyright",
+    "copyright2": "2024 Julius Schultz. 版权所有。"
+  },
   "indexPage": {
     "introduction": "你好，我是",
     "name": "朱利叶斯·舒尔茨",

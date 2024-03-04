@@ -10,13 +10,13 @@
     </NuxtLink>
     <div class="mobile-header__right-container">
       <LanguageSwitcher size="large" />
-      <div class="mobile-header__hamburger-icon" @click="toggleMenu()">
+      <div class="mobile-header__hamburger-icon" @click="toggleMenu">
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
-    <ul v-if="menuOpen" class="mobile-header__menu-links">
+    <ul v-if="menuOpen" ref="menu" class="mobile-header__menu-links">
       <li v-for="(link, index) in links" :key="index">
         <NuxtLink
           class="mobile-header__link"
@@ -36,16 +36,21 @@
 
 <script>
 import { defineComponent } from 'vue'
+import { onClickOutside } from '@vueuse/core'
 
 export default defineComponent({
   name: 'MobileHeader',
   setup() {
     const { t } = useI18n()
+    const { currentRoute } = useRouter()
 
     const menuOpen = ref(false)
+
     const toggleMenu = () => {
       menuOpen.value = !menuOpen.value
     }
+
+    const menu = ref(null)
 
     const links = computed(() => [
       { href: '/about', label: t('header.aboutLabel') },
@@ -54,10 +59,19 @@ export default defineComponent({
       { href: '/contact', label: t('header.contactLabel') },
     ])
 
+    onClickOutside(menu, () => {
+      menuOpen.value = false
+    })
+
+    watch(currentRoute, () => {
+      menuOpen.value = false
+    })
+
     return {
       //state
       menuOpen,
       links,
+      menu,
 
       //actions
       toggleMenu,
@@ -101,13 +115,6 @@ export default defineComponent({
     @apply gap-y-3;
   }
 
-  &__links {
-    @apply flex;
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-  }
-
   &__hamburger-icon {
     display: flex;
     flex-direction: column;
@@ -125,14 +132,14 @@ export default defineComponent({
 
   &__menu-links {
     position: absolute;
-    background-color: white;
+    @apply bg-white;
     width: 100%;
     margin-top: 350px;
     z-index: 1;
   }
 
   &__link-separator {
-    border-bottom-color: black;
+    @apply border-b-grey-64;
     border-bottom-width: 1px;
   }
 

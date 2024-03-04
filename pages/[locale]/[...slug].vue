@@ -60,6 +60,7 @@ const { locale } = useI18n()
     @apply self-center;
     @apply text-center;
     @apply font-semibold;
+
     &--p1 {
       @apply text-grey-32;
     }
@@ -72,6 +73,7 @@ const { locale } = useI18n()
   }
 
   &__title {
+    @apply text-grey-16;
     @apply text-5xl;
     @apply text-center;
   }

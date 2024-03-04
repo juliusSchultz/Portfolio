@@ -14,7 +14,7 @@
         </div>
       </nav>
       <p class="footer__copyright">
-        Copyright &#169; 2024 Julius Schultz. All Rights Reserved.
+        {{ $t('footer.copyright1') }} &#169; {{ $t('footer.copyright2') }}
       </p>
     </div>
   </footer>
@@ -22,17 +22,11 @@
 
 <script>
 import { defineComponent } from 'vue'
-import socialMedia from '~/components/molecules/SocialMedia/SocialMedia.vue'
 
 export default defineComponent({
   name: 'Footer',
   setup() {
-    const links = [
-      { href: '/experience', label: 'Experience' },
-      { href: '/projects', label: 'Projects' },
-      { href: '/contact', label: 'Contact' },
-      { href: '/imprint', label: 'Imprint' },
-    ]
+    const { t } = useI18n()
 
     const socialMedia = [
       {
@@ -47,15 +41,19 @@ export default defineComponent({
       },
     ]
 
+    const links = computed(() => {
+      return [
+        { href: '/experience', label: t('header.experienceLabel') },
+        { href: '/projects', label: t('header.projectsLabel') },
+        { href: '/contact', label: t('header.contactLabel') },
+        { href: '/imprint', label: t('imprint.sectionHeadline2') },
+      ]
+    })
+
     return {
-      links,
       socialMedia,
+      links,
     }
-  },
-  computed: {
-    socialMedia() {
-      return socialMedia
-    },
   },
 })
 </script>
@@ -66,29 +64,25 @@ export default defineComponent({
 
   &__grey {
     @apply bg-grey-16;
-    background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149158069.jpg?t=st=1709567989~exp=1709571589~hmac=03ecb6c3f29187d8c04fcb3e1fbeb18f62b512c8438edef2c47ba720dd898268&w=740');
-    color: white;
+    @apply bg-[url('~/assets/images/gradient-black-background-with-wavy-lines.jpg')];
+    @apply text-white;
   }
 
   &__links {
     @apply py-6;
-    @apply flex;
-    @apply flex-col;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    font-size: 1rem;
+    @apply flex flex-col;
+    @apply items-center justify-center;
+    @apply text-base;
     gap: 0.5rem;
 
     @screen md {
       gap: 2rem;
-      font-size: 1.5rem;
+      @apply text-xl;
       @apply flex-row;
     }
   }
 
   &__link {
-    text-decoration: none;
     text-decoration-color: white;
     @apply text-base;
     @apply leading-7;
@@ -99,10 +93,9 @@ export default defineComponent({
     @apply text-grey-64;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
-    text-decoration-color: rgb(181, 181, 181);
 
     @screen md {
-      text-underline-offset: 1rem;
+      text-underline-offset: 0.75rem;
     }
   }
 

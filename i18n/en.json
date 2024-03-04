@@ -7,6 +7,10 @@
     "contactLabel": "Contact",
     "languageSwitcherLabel": "Language"
   },
+  "footer": {
+    "copyright1": "Copyright",
+    "copyright2": "2024 Julius Schultz. All Rights Reserved."
+  },
   "indexPage": {
     "introduction": "Hello, I'm",
     "name": "Julius Schultz",

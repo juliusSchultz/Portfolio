@@ -91,7 +91,7 @@
     @apply flex;
     @apply items-center;
     @apply px-[46px];
-    @apply py-[56px];
+    @apply py-[64px];
     @apply bg-blue;
     @apply rounded-l-2xl;
 

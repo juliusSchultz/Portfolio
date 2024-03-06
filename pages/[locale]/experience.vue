@@ -58,6 +58,12 @@
         </div>
       </div>
     </div>
+    <div class="experience__certificates">
+      <SectionHeadline :line2="'Certificates and awards'" />
+      <div class="experience__certificate-elements">
+        <CertficateCarousel />
+      </div>
+    </div>
   </section>
 </template>
 
@@ -95,6 +101,10 @@
     @apply font-bold;
     @apply text-2xl;
     @apply mb-8;
+  }
+
+  &__certificates {
+    @apply mt-20;
   }
 }
 </style>

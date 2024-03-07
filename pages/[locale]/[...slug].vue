@@ -30,6 +30,10 @@
 
 <script setup lang="ts">
 const { locale } = useI18n()
+defineOgImageComponent('BrandedLogo', {
+  headline: 'Julius Schultz',
+  title: 'Hello, I am Julius Schultz 👋💻',
+})
 </script>
 
 <style>

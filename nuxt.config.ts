@@ -14,6 +14,13 @@ export default defineNuxtConfig({
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['@/assets/scss/style.scss'],
 
+  site: {
+    url: baseURL,
+    name: 'Julius Schultz - Web Developer',
+    description:
+      'This is the website of the software developer Julius Schultz. You will find information about his experience, projects, skills, and more. Go check it out!',
+  },
+
   components: {
     global: true,
     // ignore: ['**/*.story.vue'],
@@ -23,6 +30,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
+    '@nuxtjs/seo',
     '@nuxt/image',
     '@pinia/nuxt',
     '@vue-email/nuxt',

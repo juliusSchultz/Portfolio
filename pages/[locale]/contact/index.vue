@@ -4,7 +4,7 @@
       :line1="$t('form.sectionHeadline1')"
       :line2="$t('form.sectionHeadline2')"
     />
-    <div class="contact__input-fields">
+    <form class="contact__input-fields">
       <InputField
         v-model="requestData.firstName"
         :label="$t('form.firstName')"
@@ -56,7 +56,7 @@
           required: helpers.withMessage(requiredMessage, required),
         }"
       />
-    </div>
+    </form>
     <Button :label="$t('form.submit')" icon="mail" @click="submit" />
   </div>
 </template>

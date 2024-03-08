@@ -1,6 +1,6 @@
 <template>
   <!-- eslint-disable-next-line vue/no-v-html -->
-  <div v-if="icon" class="pv-svg" v-html="icon" />
+  <div v-if="icon" class="pv-svg" :title="icon" v-html="icon" />
 </template>
 
 <script>

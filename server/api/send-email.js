@@ -5,13 +5,10 @@ const mailerSend = new MailerSend({
   apiKey: process.env.MAILERSEND_API_KEY || '',
 })
 
-const sentFrom = new Sender(
-  'julius.schultz@juliusschultz.com',
-  'Julius Schultz'
-)
-const recipients = [
-  new Recipient('julius.schultz@juliusschultz.com', 'Julius Schultz'),
-]
+const usedMail = process.env.USED_MAIL
+
+const sentFrom = new Sender(usedMail, 'Julius Schultz')
+const recipients = [new Recipient(usedMail, 'Julius Schultz')]
 
 export default defineEventHandler(async (event) => {
   const body = JSON.parse(await readBody(event))

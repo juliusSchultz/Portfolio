@@ -8,7 +8,13 @@
       {{ $t('aboutPage.introduction1') }}
       <br />
       <br />
-      {{ $t('aboutPage.introduction2') }}
+      {{ $t('aboutPage.introduction2')
+      }}<NuxtLink
+        v-if="locale !== 'zh'"
+        class="about__text--inline-link"
+        :to="`https://www.diva-e.com/${locale}/`"
+        >#divae</NuxtLink
+      >
     </p>
     <img
       src="~/assets/images/side.jpeg"
@@ -50,6 +56,10 @@
   </section>
 </template>
 
+<script setup lang="ts">
+const { locale } = useI18n()
+</script>
+
 <style>
 .about {
   @apply flex flex-col;
@@ -57,6 +67,15 @@
   &__text {
     text-align: center;
     @apply mb-14;
+
+    &--inline-link {
+      @apply text-blue;
+
+      &:hover {
+        @apply text-blue-lighter;
+        @apply underline;
+      }
+    }
   }
 
   &__pic {

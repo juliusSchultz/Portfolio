@@ -31,11 +31,17 @@
     </div>
     <div class="profile__about">
       <SectionHeadline :line2="$t('aboutPage.sectionHeadline2')" />
-      <p class="about__text">
+      <p class="profile__about-me">
         {{ $t('aboutPage.introduction1') }}
         <br />
         <br />
-        {{ $t('aboutPage.introduction2') }}
+        {{ $t('aboutPage.introduction2')
+        }}<NuxtLink
+          v-if="locale !== 'zh'"
+          class="profile__about-me--inline-link"
+          :to="`https://www.diva-e.com/${locale}/`"
+          >#divae</NuxtLink
+        >
       </p>
     </div>
     <div class="profile__certificates">
@@ -100,6 +106,17 @@ defineOgImageComponent('BrandedLogo', {
       @apply text-2xl;
       @apply mb-4;
       @apply text-grey-32;
+    }
+  }
+
+  &__about-me {
+    &--inline-link {
+      @apply text-blue;
+
+      &:hover {
+        @apply text-blue-lighter;
+        @apply underline;
+      }
     }
   }
 

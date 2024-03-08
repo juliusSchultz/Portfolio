@@ -66,6 +66,13 @@ export default defineComponent({
     @apply bg-grey-16;
     @apply bg-[url('~/assets/images/gradient-black-background-with-wavy-lines.jpg')];
     @apply text-white;
+    padding-top: 150px;
+    --mask: radial-gradient(13.42rem at 50% 18rem, #000 99%, #0000 101%)
+        calc(50% - 12rem) 0/24rem 100%,
+      radial-gradient(13.42rem at 50% -12rem, #0000 99%, #000 101%) 50% 6rem/24rem
+        100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
   }
 
   &__links {

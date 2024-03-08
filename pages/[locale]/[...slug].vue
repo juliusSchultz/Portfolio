@@ -1,28 +1,45 @@
 <template>
   <section class="profile">
-    <div class="profile__pic-container">
-      <img src="~/assets/images/profile.png" alt="Profile picture" />
+    <div class="profile__picture-with-text">
+      <div class="profile__pic-container">
+        <img src="~/assets/images/profile.png" alt="Profile picture" />
+      </div>
+      <div class="profile__text">
+        <h3 class="profile__text--p1">👋 {{ $t('indexPage.introduction') }}</h3>
+        <h1 class="profile__title">{{ $t('indexPage.name') }}</h1>
+        <h2 class="profile__text--p2">{{ $t('indexPage.jobTitle') }}</h2>
+        <div class="profile__btn-container">
+          <Button
+            :to="`https://www.diva-e.com/${locale}/`"
+            :label="$t('indexPage.companyButtonLabel')"
+            variant="secondary"
+            class="profile__btn"
+            icon="apartment"
+          />
+          <Button
+            to="/contact"
+            :label="$t('indexPage.contactButtonLabel')"
+            variant="secondary"
+            shape="outlined"
+            class="profile__btn"
+            icon="connect_without_contact"
+          />
+        </div>
+      </div>
     </div>
-    <div class="profile__text">
-      <p class="profile__text--p1">👋 {{ $t('indexPage.introduction') }}</p>
-      <h1 class="profile__title">{{ $t('indexPage.name') }}</h1>
-      <p class="profile__text--p2">{{ $t('indexPage.jobTitle') }}</p>
-      <div class="profile__btn-container">
-        <Button
-          :to="`https://www.diva-e.com/${locale}/`"
-          :label="$t('indexPage.companyButtonLabel')"
-          variant="secondary"
-          class="profile__btn"
-          icon="apartment"
-        />
-        <Button
-          to="/contact"
-          :label="$t('indexPage.contactButtonLabel')"
-          variant="secondary"
-          shape="outlined"
-          class="profile__btn"
-          icon="connect_without_contact"
-        />
+    <div class="profile__about">
+      <SectionHeadline :line2="$t('aboutPage.sectionHeadline2')" />
+      <p class="about__text">
+        {{ $t('aboutPage.introduction1') }}
+        <br />
+        <br />
+        {{ $t('aboutPage.introduction2') }}
+      </p>
+    </div>
+    <div class="profile__certificates">
+      <SectionHeadline :line2="$t('experiencePage.certificates')" />
+      <div class="profile__certificate-elements">
+        <CertficateCarousel />
       </div>
     </div>
   </section>
@@ -38,17 +55,25 @@ defineOgImageComponent('BrandedLogo', {
 
 <style>
 .profile {
-  @apply flex;
-  @apply flex-col;
-  @apply justify-center;
+  @apply flex flex-col;
+  @apply gap-y-36;
   @apply my-10;
-  @apply gap-y-8;
-  @apply items-center;
 
   @screen md {
-    @apply flex-row;
-    @apply gap-x-20;
     @apply my-20;
+  }
+
+  &__picture-with-text {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply gap-y-8;
+    @apply items-center;
+
+    @screen md {
+      @apply flex-row;
+      @apply gap-x-20;
+    }
   }
 
   &__pic-container {

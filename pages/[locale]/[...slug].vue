@@ -5,7 +5,9 @@
         <img src="~/assets/images/profile.png" alt="Profile picture" />
       </div>
       <div class="profile__text">
-        <h3 class="profile__text--p1">👋 {{ $t('indexPage.introduction') }}</h3>
+        <span class="profile__text--p1"
+          >👋 {{ $t('indexPage.introduction') }}</span
+        >
         <h1 class="profile__title">{{ $t('indexPage.name') }}</h1>
         <h2 class="profile__text--p2">{{ $t('indexPage.jobTitle') }}</h2>
         <div class="profile__btn-container">

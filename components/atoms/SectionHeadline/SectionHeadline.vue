@@ -1,7 +1,7 @@
 <template>
   <div class="section-headline">
-    <h4 class="section-headline__headline--1">{{ line1 }}</h4>
-    <h1 class="section-headline__headline--2">{{ line2 }}</h1>
+    <span v-if="line1" class="section-headline__headline--1">{{ line1 }}</span>
+    <h3 v-if="line2" class="section-headline__headline--2">{{ line2 }}</h3>
   </div>
 </template>
 <script>

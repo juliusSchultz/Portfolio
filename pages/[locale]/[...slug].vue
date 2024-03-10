@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="profile__about">
-      <SectionHeadline :line2="$t('aboutPage.sectionHeadline2')" />
+      <SectionHeadline :line2="`${$t('aboutPage.sectionHeadline2')} ✨`" />
       <p class="profile__about-me">
         {{ $t('aboutPage.introduction1') }}
         <br />

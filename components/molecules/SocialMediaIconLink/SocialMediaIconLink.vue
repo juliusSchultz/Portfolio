@@ -13,7 +13,7 @@ export default defineComponent({
     icon: {
       type: String,
       required: true,
-      validator: (val) => ['linkedin', 'github'].includes(val),
+      validator: (val) => ['linkedin', 'github', 'xing'].includes(val),
     },
     /**
      * The icon title for accessibility

@@ -39,6 +39,11 @@ export default defineComponent({
         title: 'GitHub',
         to: 'https://github.com/juliusSchultz',
       },
+      {
+        icon: 'xing',
+        title: 'Xing',
+        to: 'https://www.xing.com/profile/Julius_Schultz042525',
+      },
     ]
 
     const links = computed(() => {

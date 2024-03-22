@@ -87,6 +87,7 @@ const { locale } = useI18n()
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
+    @apply bg-white;
   }
 
   &__picture {

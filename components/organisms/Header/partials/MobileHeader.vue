@@ -17,6 +17,7 @@
       </div>
     </div>
     <ul v-if="menuOpen" ref="menu" class="mobile-header__menu-links">
+      <div class="mobile-header__link-separator" />
       <li v-for="(link, index) in links" :key="index">
         <NuxtLink
           class="mobile-header__link"

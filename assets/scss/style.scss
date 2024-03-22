@@ -7,4 +7,7 @@
 html {
   scroll-behavior: smooth;
   // background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-255379.jpg&fm=jpg");
+  // @apply bg-[url('~/assets/images/26669.jpg')];
+  background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+  url('~/assets/images/26669.jpg');
 }

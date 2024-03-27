@@ -27,7 +27,6 @@
 
   &__icon {
     @apply text-green-lighter;
-    @apply bg-white;
     @apply mb-10;
     @apply self-center;
   }

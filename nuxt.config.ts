@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   css: ['@/assets/scss/style.scss'],
 
   site: {
-    url: baseURL,
+    url: 'https://juliusschultz.com/',
     name: 'Julius Schultz - Web Developer',
     description:
       'This is the website of the software developer Julius Schultz. You will find information about his experience, projects, skills, and more. Go check it out!',

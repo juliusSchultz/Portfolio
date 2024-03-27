@@ -21,6 +21,32 @@ export default defineNuxtConfig({
       'This is the website of the software developer Julius Schultz. You will find information about his experience, projects, skills, and more. Go check it out!',
   },
 
+  sitemap: {
+    sources: ['/api/__sitemap__/urls'],
+    sitemaps: {
+      english: {
+        includeAppSources: true,
+        include: ['/en/**'],
+      },
+      german: {
+        includeAppSources: true,
+        include: ['/de/**'],
+      },
+      french: {
+        includeAppSources: true,
+        include: ['/fr/**'],
+      },
+      polish: {
+        includeAppSources: true,
+        include: ['/pl/**'],
+      },
+      chinese: {
+        includeAppSources: true,
+        include: ['/global/zh/**'],
+      },
+    },
+  },
+
   components: {
     global: true,
     // ignore: ['**/*.story.vue'],

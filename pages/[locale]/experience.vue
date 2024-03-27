@@ -59,7 +59,7 @@
       </div>
     </div>
     <div class="experience__certificates">
-      <SectionHeadline :line2="'Certificates and awards'" />
+      <SectionHeadline :line2="$t('experiencePage.certificates')" />
       <div class="experience__certificate-elements">
         <CertficateCarousel />
       </div>

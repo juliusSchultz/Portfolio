@@ -17,7 +17,7 @@
       >
     </p>
     <img
-      src="~/assets/images/side.jpeg"
+      src="../../assets/images/blick-nach-oben.jpeg"
       :alt="$t('aboutPage.profilePictureAlt')"
       class="about__pic"
     />

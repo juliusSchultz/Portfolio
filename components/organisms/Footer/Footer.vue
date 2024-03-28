@@ -78,6 +78,11 @@ export default defineComponent({
         100% repeat-x;
     -webkit-mask: var(--mask);
     mask: var(--mask);
+
+    @screen md {
+      background-repeat: round;
+      background-size: cover;
+    }
   }
 
   &__links {

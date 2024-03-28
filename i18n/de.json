@@ -72,8 +72,7 @@
   "form": {
     "sectionHeadline1": "Nehmen Sie",
     "sectionHeadline2": "Kontakt auf",
-    "firstName": "Vorname",
-    "lastName": "Nachname",
+    "name": "Name",
     "company": "Firma / Universität",
     "mail": "E-Mail",
     "telephone": "Telefon",

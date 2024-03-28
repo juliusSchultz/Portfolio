@@ -1,10 +1,9 @@
 <template>
   <e-html lang="en">
     <ERow>
-      <EText>Name: {{ firstName }} {{ lastName }}</EText>
+      <EText>Name: {{ name }}</EText>
       <EText>Firma: {{ company }}</EText>
       <EText>E-Mail: {{ mail }}</EText>
-      <EText>Telefon: {{ telephone }}</EText>
       <EText>Nachricht: {{ message }}</EText>
     </ERow>
   </e-html>

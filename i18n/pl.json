@@ -72,8 +72,7 @@
   "form": {
     "sectionHeadline1": "Skontaktuj się",
     "sectionHeadline2": "ze Mną",
-    "firstName": "Imię",
-    "lastName": "Nazwisko",
+    "name": "Imię",
     "company": "Entreprise",
     "mail": "E-mail",
     "telephone": "Telefon",

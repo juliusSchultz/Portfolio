@@ -15,11 +15,9 @@ export default defineEventHandler(async (event) => {
 
   const template = await useCompiler('NormalTemplate.vue', {
     props: {
-      firstName: body?.firstName || '',
-      lastName: body?.lastName || '',
+      name: body?.name || '',
       company: body?.company || '-',
       mail: body?.mail || '-',
-      telephone: body?.telephone || '-',
       message: body?.message || '',
     },
   })

@@ -6,18 +6,9 @@
     />
     <form class="contact__input-fields">
       <InputField
-        v-model="requestData.firstName"
-        :label="$t('form.firstName')"
-        :placeholder="$t('form.firstName')"
-        :required="true"
-        :rules="{
-          required: helpers.withMessage(requiredMessage, required),
-        }"
-      />
-      <InputField
-        v-model="requestData.lastName"
-        :label="$t('form.lastName')"
-        :placeholder="$t('form.lastName')"
+        v-model="requestData.name"
+        :label="$t('form.name')"
+        :placeholder="$t('form.name')"
         :required="true"
         :rules="{
           required: helpers.withMessage(requiredMessage, required),
@@ -32,11 +23,6 @@
         v-model="requestData.mail"
         :label="$t('form.mail')"
         :placeholder="$t('form.mail')"
-      />
-      <InputField
-        v-model="requestData.telephone"
-        :label="$t('form.telephone')"
-        :placeholder="$t('form.telephone')"
       />
       <InputField
         v-model="requestData.subject"
@@ -70,11 +56,9 @@ const { t } = useI18n()
 const requiredMessage = t('form.requiredMessage')
 
 const requestData = ref({
-  firstName: '',
-  lastName: '',
+  name: '',
   company: '',
   mail: '',
-  telephone: '',
   subject: '',
   message: '',
 })

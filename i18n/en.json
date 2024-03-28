@@ -72,8 +72,7 @@
   "form": {
     "sectionHeadline1": "Get in Touch",
     "sectionHeadline2": "Contact Me",
-    "firstName": "First name",
-    "lastName": "Last name",
+    "name": "Name",
     "company": "Company",
     "mail": "E-Mail",
     "telephone": "Telephone",

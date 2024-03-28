@@ -72,8 +72,7 @@
   "form": {
     "sectionHeadline1": "Entrer en contact",
     "sectionHeadline2": "Contactez moi",
-    "firstName": "Prénom",
-    "lastName": "Nom de famille",
+    "name": "Nom",
     "company": "Entreprise",
     "mail": "E-mail",
     "telephone": "Téléphone",

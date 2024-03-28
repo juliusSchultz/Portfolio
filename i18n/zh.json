@@ -72,8 +72,7 @@
   "form": {
     "sectionHeadline1": "保持联系",
     "sectionHeadline2": "联络我",
-    "firstName": "名",
-    "lastName": "姓",
+    "name": "姓",
     "company": "公司",
     "mail": "电子邮件",
     "telephone": "电话",

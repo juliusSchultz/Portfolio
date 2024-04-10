@@ -42,7 +42,7 @@ export default defineNuxtConfig({
       },
       chinese: {
         includeAppSources: true,
-        include: ['/global/zh/**'],
+        include: ['/zh/**'],
       },
     },
   },

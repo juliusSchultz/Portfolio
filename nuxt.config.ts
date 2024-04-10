@@ -45,6 +45,10 @@ export default defineNuxtConfig({
         include: ['/zh/**'],
       },
     },
+    xslColumns: [
+      // URL column must always be set, no value needed
+      { label: 'URL', width: '100%' },
+    ],
   },
 
   components: {

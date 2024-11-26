@@ -75,7 +75,7 @@ onLanguageSwitched('switcher', () => {
     width: 11rem;
     padding-top: 1rem;
 
-    @scree lg {
+    @screen lg {
       width: 12.75rem;
     }
   }
